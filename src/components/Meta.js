@@ -1,17 +1,19 @@
 import React, {Component} from 'react';
 import {Helmet} from "react-helmet";
 
-export default class Helmet extends Component {
+export default class Meta extends Component {
 
 
     render() {
+
         return (
-            <Helmet>
-                <title>Ideas || MysiteName</title>
-                <meta name="keywords" content="HTML,CSS,JavaScript"/>
+
+            <Helmet >
+                <title>{this.props.meta.title}</title>
+                <meta name="keywords" content={this.props.meta.keywords}/>
                 <meta
                     name="description"
-                    content="Ideas page using react helmet very easy to implement "
+                    content={this.props.meta.description}
                 />
             </Helmet>
         )

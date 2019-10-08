@@ -1,14 +1,23 @@
 import React, {Component} from 'react';
+import Meta from "./Meta";
+import {Link} from "react-router-dom";
 
-export default class Price extends Component {
+const meta={
+    title:'Device',
+    keywords:'Device',
+    description:'Device',
+}
+export default class Device extends Component {
     render() {
         return (
-            <section className="section" id="price">
+            <section className="section" id="team">
+                <Meta meta={meta} />
+
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-12 text-center">
                             <div className="section-title">
-                                <h4 className="title text-uppercase mb-4">نرخ های ما</h4>
+                                <h4 className="title text-uppercase mb-4"> برخی از تجهیزات کلینیک مروراید</h4>
                                 <p className="text-muted mx-auto para-desc mb-0">رنگ رویایی خود را چاپ کنید خانه خود را
                                     به رنگهای پر جنب و جوش ببرید. ما ارائه خدمات انعطاف پذیر برای اسکان را در اولویت
                                     قرار می دهیم برای نیاز های شما</p>
@@ -20,50 +29,16 @@ export default class Price extends Component {
 
                     <div className="row">
                         <div className="col-lg-3 col-md-6 mt-4 pt-2">
-                            <div className="pricing-table border text-center rounded bg-white">
-                                <h3 className="price-title p-4 bg-light mb-0">پکیج کاربردی</h3>
-                                <div className="pricing-features">
-                                    <ul className="list-unstyled p-4 mb-0">
-                                        <li className="border-0"> دست کامل</li>
-                                        <li className="border-0"> پا کامل</li>
-                                        <li className="border-0"> زیر بغل و بکینی</li>
-                                        <li className="border-0"> صورت کامل</li>
-                                        <li className="border-0"> خط شکم</li>
+                            <div className="team-concept rounded text-center bg-white shadow">
+                                <div className="team-image position-relative">
+                                    <img  src={require('../images/devices/001.jpg')}   className="img-fluid rounded-top" alt="555" />
 
-
-                                    </ul>
                                 </div>
-                                <div className="price-value p-4 position-relative bg-light">
-                                    <div className="price-lable">
-                                        <h4 className="mb-0 rates">315,000 تومان</h4>
-                                    </div>
-                                </div>
-                                <div className="price-button p-4">
-                                    <a href="#" className="btn btn-custom w-100">اکنون وارد شوید</a>
-                                </div>
-                            </div>
+                                <div className="content pt-4 pb-4">
+                                    <h4 className="name text-uppercase mb-0"> دستگاه لیز موهای زاید دایود</h4>
 
-                        </div>
-
-                        <div className="col-lg-3 col-md-6 mt-4 pt-2">
-                            <div className="pricing-table border text-center rounded bg-white">
-                                <h3 className="price-title p-4 text-light bg-custom mb-0">پکیج طلایی</h3>
-                                <div className="pricing-features">
-                                    <ul className="list-unstyled p-4 mb-0">
-                                        <li className="border-0"> فول بادی کامل (کل بدن)</li>
-                                        <li className="border-0"> صورت کامل</li>
-
-
-                                    </ul>
-                                </div>
-                                <div className="price-value p-4 position-relative bg-light">
-                                    <div className="price-lable">
-                                        <h4 className="mb-0 rates">415,000 تومان</h4>
-
-                                    </div>
-                                </div>
-                                <div className="price-button p-4">
-                                    <a href="#" className="btn btn-custom w-100">اکنون وارد شوید</a>
+                                    <Link className="text-primary" to="/blog-content/1/3">مطالعه بیشتر<i
+                                        className="mdi mdi-chevron-right ml-1"/></Link>
                                 </div>
                             </div>
 
@@ -71,29 +46,16 @@ export default class Price extends Component {
 
 
                         <div className="col-lg-3 col-md-6 mt-4 pt-2">
-                            <div className="pricing-table shadow text-center rounded bg-white">
-                                <div className="lable text-center bg-custom pt-2 pb-2">
-                                    <h6 className="best text-white mb-0 text-uppercase"> *</h6>
-                                </div>
-                                <h3 className="price-title p-4 bg-light mb-0">پکیج نقره ای</h3>
-                                <div className="pricing-features">
-                                    <ul className="list-unstyled p-4 mb-0">
-                                        <li className="border-0"> دست کامل</li>
-                                        <li className="border-0"> پا کامل</li>
-                                        <li className="border-0"> زیر بغل و بکینی</li>
-                                        <li className="border-0"> صورت کامل</li>
-                                        <li className="border-0"> خط شکم</li>
+                            <div className="team-concept rounded text-center bg-white shadow">
+                                <div className="team-image position-relative">
+                                    <img src={require('../images/devices/002.jpg')} className="img-fluid rounded-top" alt="" />
 
+                                </div>
+                                <div className="content pt-4 pb-4">
+                                    <h4 className="name text-uppercase mb-0"> دستگاه لیز موهای زاید E-light shr</h4>
 
-                                    </ul>
-                                </div>
-                                <div className="price-value p-4 position-relative bg-light">
-                                    <div className="price-lable">
-                                        <h4 className="mb-0 rates">315,000 تومان</h4>
-                                    </div>
-                                </div>
-                                <div className="price-button p-4">
-                                    <a href="#" className="btn btn-custom w-100">اکنون وارد شوید</a>
+                                    <Link className="text-primary" to="/blog-content/1/3">مطالعه بیشتر<i
+                                        className="mdi mdi-chevron-right ml-1"/></Link>
                                 </div>
                             </div>
 
@@ -101,26 +63,33 @@ export default class Price extends Component {
 
 
                         <div className="col-lg-3 col-md-6 mt-4 pt-2">
-                            <div className="pricing-table border text-center rounded bg-white">
-                                <h3 className="price-title p-4 bg-light mb-0">پکیج برنزی</h3>
-                                <div className="pricing-features">
-                                    <ul className="list-unstyled p-4 mb-0">
-                                        <li className="border-0"> دست کامل</li>
-                                        <li className="border-0"> پا کامل</li>
-                                        <li className="border-0"> زیر بغل و بکینی</li>
-                                        <li className="border-0"> صورت کامل</li>
-                                        <li className="border-0"> خط شکم</li>
+                            <div className="team-concept rounded text-center bg-white shadow">
+                                <div className="team-image position-relative">
+                                    <img src={require('../images/devices/003.jpg')} className="img-fluid rounded-top" alt="" />
+
+                                </div>
+                                <div className="content pt-4 pb-4">
+                                    <h4 className="name text-uppercase mb-0">دستگاه میکرودرم ابریژن </h4>
+
+                                    <Link className="text-primary" to="/blog-content/1/3">مطالعه بیشتر<i
+                                        className="mdi mdi-chevron-right ml-1"/></Link>
+                                </div>
+                            </div>
+
+                        </div>
 
 
-                                    </ul>
+                        <div className="col-lg-3 col-md-6 mt-4 pt-2">
+                            <div className="team-concept rounded text-center bg-white shadow">
+                                <div className="team-image position-relative">
+                                    <img src={require('../images/devices/004.jpg')} className="img-fluid rounded-top" alt="" />
+
                                 </div>
-                                <div className="price-value p-4 position-relative bg-light">
-                                    <div className="price-lable">
-                                        <h4 className="mb-0 rates">315,000 تومان</h4>
-                                    </div>
-                                </div>
-                                <div className="price-button p-4">
-                                    <a href="#" className="btn btn-custom w-100">اکنون وارد شوید</a>
+                                <div className="content pt-4 pb-4">
+                                    <h4 className="name text-uppercase mb-0"> دستگاه کربوکسی تراپی </h4>
+
+                                    <Link className="text-primary" to="/blog-content/1/3">مطالعه بیشتر<i
+                                        className="mdi mdi-chevron-right ml-1"/></Link>
                                 </div>
                             </div>
 
@@ -131,7 +100,6 @@ export default class Price extends Component {
                 </div>
 
             </section>
-
 
 
     )

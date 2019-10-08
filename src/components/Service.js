@@ -1,46 +1,179 @@
 import React, {Component} from 'react';
+import {Link} from "react-router-dom";
 
-export default class AboutUs extends Component {
+const meta = {
+    title: 'about',
+    keywords: 'about',
+    description: 'about',
+}
+export default class Service extends Component {
     render() {
         return (
-            <section className="section" id="about">
+            <section className="section bg-light" id="services">
                 <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-lg-7 col-md-6">
-                            <div className="section-title mb-0 mr-0 mr-md-4">
-                                <h4 className="title text-uppercase mb-4">درباره کلینیک مروارید</h4>
-                                <p className="text-muted">لیزر رفع موهای زائد دستگاهی است که فرایند از بین بردن مو‌های
-                                    ناخواسته یا موهای زائد را با استفاده از قرار گرفتن در معرض پالس لیزر نور انجام
-                                    می‌دهد و منجر به از بین بردن فولیکول مو و عدم رشد مجدد مو می‌شود. امروزه ليزرها براي
-                                    درمان و همچنين براي زيبايي چهره و بدن استفاده مي‌شوند.
-                                    كلينيك ليزر مروارید در سال ۱۳92 تأسيس‌شده است كه تحت نظر پزشکان مجرب اقدام به
-                                    لیزرموهای زاید نواحی مختلف بدن و صورت می نماید هم چنین با انجام دیگر کارهای متنوع به
-                                    مشكلات زيبايي مي‌پردازد.
-                                    وجه تمايز كلينيك ليزر مروارید با دیگر کلینیک های موجود در این منطقه اين است كه این
-                                    کلینیک به صورت تمام وقت و حتی روزهای تعطیل اماده ارایه تمام خدمات مرتبط با پوست و مو
-                                    می باشد هم چنین داشتن فضای ارام و بزرگ و طراحی شیک و تهویه مناسب پرسنل مجرب و با
-                                    اخلاق تمای شرایط موردنیاز جهت حفظ ارامش بیماران و مشتریان را فراهم اورده است.
-                                    شايان‌ذكر است كه استفاده از دستگاه‌هاي به‌روز دنيا مجهز به سيستم‌هاي خنك‌كننده قوي،
-                                    درمان مؤثر، ايمن و بدون عارضه‌اي را براي مراجعين به ارمغان آورده است. استقبال چشمگير
-                                    مراجعين از نحوه خدمت رساني و همچنين اثربخشي دستگاه‌هاي ليزر بدون كمترين عارضه در طول
-                                    ساليان گواه اين امر است.
-                                </p>
-                                <a  className="btn btn-custom">مطالعه بیشتر <i
-                                    className="mdi mdi-chevron-right"/></a>
+                    <div className="row justify-content-center">
+                        <div className="col-12 text-center">
+                            <div className="section-title">
+                                <h4 className="title text-uppercase mb-4">خدمات کلینیک</h4>
+                                <p className="text-muted mx-auto para-desc mb-0">رنگ رویایی خود را چاپ کنید خانه خود را
+                                    به رنگهای پر جنب و جوش ببرید. ما ارائه خدمات انعطاف پذیر برای اسکان را در اولویت
+                                    قرار می دهیم برا نیاز های شما</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div className="row">
+                        <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                            <div className="service-container border-color border rounded p-4 text-center">
+                                <div className="number-icon position-relative">
+                                    <div className="icon-2 d-inline-block border rounded-pill">
+                                        <i className="pe-7s-shield text-custom"/>
+                                    </div>
+
+                                    <div className="number text-center rounded-pill bg-white border">
+                                        <span className="font-weight-bold">01</span>
+                                    </div>
+                                </div>
+
+                                <div className="content mt-3">
+                                    <h4 className="title text-dark">لیزر موهای زاید</h4>
+                                    <p className="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                                        و با استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                        از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                    <Link className="text-dark" to="/blog-content/1/6">مطالعه بیشتر<i
+                                        className="mdi mdi-chevron-right ml-1"/></Link>
+                                </div>
                             </div>
 
                         </div>
 
-                        <div className="col-lg-5 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                            <div className="position-relative">
-                                <img src="../images/business/about.jpg" className="img-fluid shadow rounded" alt="" />
-                                    <div className="play-icon">
-                                        <a href="http://vimeo.com/7396421" className="video-play-icon text-center"
-                                           title="تماشا کن">
-                                            <i className="mdi mdi-play text-white rounded-pill"/>
-                                        </a>
+
+                        <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                            <div className="service-container border-color border rounded p-4 text-center">
+                                <div className="number-icon position-relative">
+                                    <div className="icon-2 d-inline-block border rounded-pill">
+                                        <i className="pe-7s-way text-custom"/>
                                     </div>
+
+                                    <div className="number text-center rounded-pill bg-white border">
+                                        <span className="font-weight-bold">02</span>
+                                    </div>
+                                </div>
+
+                                <div className="content mt-3">
+                                    <h4 className="title text-dark"> هاشور ابرو و آرایش دایم صورت</h4>
+                                    <p className="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                                        و با استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                        از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                    <Link className="text-dark" to="/blog-content/1/6">مطالعه بیشتر<i
+                                        className="mdi mdi-chevron-right ml-1"/></Link>
+                                </div>
                             </div>
+
+                        </div>
+
+
+                        <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                            <div className="service-container border-color border rounded p-4 text-center">
+                                <div className="number-icon position-relative">
+                                    <div className="icon-2 d-inline-block border rounded-pill">
+                                        <i className="pe-7s-note2 text-custom"/>
+                                    </div>
+
+                                    <div className="number text-center rounded-pill bg-white border">
+                                        <span className="font-weight-bold">03</span>
+                                    </div>
+                                </div>
+
+                                <div className="content mt-3">
+                                    <h4 className="title text-dark">پاکسازی پوست</h4>
+                                    <p className="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                                        و با استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                        از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                    <Link className="text-dark" to="/blog-content/1/6">مطالعه بیشتر<i
+                                        className="mdi mdi-chevron-right ml-1"/></Link>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                            <div className="service-container border-color border rounded p-4 text-center">
+                                <div className="number-icon position-relative">
+                                    <div className="icon-2 d-inline-block border rounded-pill">
+                                        <i className="pe-7s-world text-custom"/>
+                                    </div>
+
+                                    <div className="number text-center rounded-pill bg-white border">
+                                        <span className="font-weight-bold">04</span>
+                                    </div>
+                                </div>
+
+                                <div className="content mt-3">
+                                    <h4 className="title text-dark"> کربوکسی تراپی</h4>
+                                    <p className="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                                        و با استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                        از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                    <Link className="text-dark" to="/blog-content/1/6">مطالعه بیشتر<i
+                                        className="mdi mdi-chevron-right ml-1"/></Link>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                            <div className="service-container border-color border rounded p-4 text-center">
+                                <div className="number-icon position-relative">
+                                    <div className="icon-2 d-inline-block border rounded-pill">
+                                        <i className="pe-7s-anchor text-custom"/>
+                                    </div>
+
+                                    <div className="number text-center rounded-pill bg-white border">
+                                        <span className="font-weight-bold">05</span>
+                                    </div>
+                                </div>
+
+                                <div className="content mt-3">
+                                    <h4 className="title text-dark"> تزریق ژل و بوتاکس</h4>
+                                    <p className="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                                        و با استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                        از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                    <Link className="text-dark" to="/blog-content/1/6">مطالعه بیشتر<i
+                                        className="mdi mdi-chevron-right ml-1"/></Link>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                            <div className="service-container border-color border rounded p-4 text-center">
+                                <div className="number-icon position-relative">
+                                    <div className="icon-2 d-inline-block border rounded-pill">
+                                        <i className="pe-7s-plane text-custom"/>
+                                    </div>
+
+                                    <div className="number text-center rounded-pill bg-white border">
+                                        <span className="font-weight-bold">06</span>
+                                    </div>
+                                </div>
+
+                                <div className="content mt-3">
+                                    <h4 className="title text-dark"> میکرونیدلینگ</h4>
+                                    <p className="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                                        و با استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                        از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                    <Link className="text-dark" to="/blog-content/1/6">مطالعه بیشتر<i
+                                        className="mdi mdi-chevron-right ml-1"/></Link>
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
@@ -49,7 +182,6 @@ export default class AboutUs extends Component {
 
             </section>
 
-
-    )
+        )
     }
 }

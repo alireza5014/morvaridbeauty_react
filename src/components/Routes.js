@@ -1,23 +1,45 @@
-import React from 'react';
-import { Route, Switch } from 'react-router-dom';
-import DashboardPage from './pages/DashboardPage';
-import ProfilePage from './pages/ProfilePage';
-import TablesPage from './pages/TablesPage';
-import MapsPage from './pages/MapsPage';
-import NotFoundPage from './pages/NotFoundPage';
+import React from "react";
+import { BrowserRouter as Router, Link } from "react-router-dom";
+
+import AboutUs from "./AboutUs";
+import Device from "./Device";
+import Price from "./Price";
+import Home from "./Home";
+import Service from "./Service";
+import Blog from "./Blog";
+import {Route} from "react-router";
+
 
 class Routes extends React.Component {
   render() {
     return (
-      <Switch>
-        <Route path='/' exact component={DashboardPage} />
-        <Route path='/dashboard' component={DashboardPage} />
-        <Route path='/profile' component={ProfilePage} />
-        <Route path='/tables' component={TablesPage} />
-        <Route path='/maps' component={MapsPage} />
-        <Route path='/404' component={NotFoundPage} />
-      </Switch>
-    );
+        <Router>
+          <div>
+              <ul>
+                  <li>
+                      <Link to="/">Home</Link>
+                  </li>
+                  <li>
+                      <Link to="/about_us">About</Link>
+                  </li>
+                  <li>
+                      <Link to="/price">price</Link>
+                  </li>
+              </ul>
+
+              <hr />
+              <Route exact path='/'   component={Home}/>
+              <Route exact path='/about_us' component={AboutUs}/>
+              <Route exact path='/price' component={Price}/>
+              <Route exact path='/device' component={Device}/>
+              <Route exact path='/blog' component={Blog}/>
+              <Route exact path='/service' component={Service}/>
+
+          </div>
+
+
+        </Router>
+     );
   }
 }
 

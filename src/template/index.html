@@ -1,0 +1,930 @@
+
+<!DOCTYPE html>
+    <html lang="fa">
+
+    
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+        <meta charset="utf-8" />
+        <title>کلینیک لیزر موهای زائد در شهر قدس</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
+    <meta name="keywords" content="کلینیک لیزر موهای زائد, لیزر موهای زائد در شهر قدس" />
+
+        <meta name="author"  content="علیرضا حیدری"   />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Magnific -->
+        <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
+        <!-- Icon -->
+        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/pe-icon-7-stroke.css" rel="stylesheet" type="text/css" />           
+        <!-- SLICK SLIDER -->
+        <link rel="stylesheet" href="css/owl.carousel.min.css"/>
+        <link rel="stylesheet" href="css/owl.theme.css"/>
+        <link rel="stylesheet" href="css/owl.transitions.css"/>
+        <link rel="stylesheet" href="css/slick.css"/>
+        <link rel="stylesheet" href="css/slick-theme.css"/>
+        <!-- Animation -->
+        <link href="css/animate.css" rel="stylesheet" />
+        <link href="css/animations-delay.css" rel="stylesheet" />
+        <!-- Custom Css -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+
+
+    <div class="modal fade" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!--Content-->
+            <div class="modal-content form-elegant">
+                <!--Header-->
+                <div class="modal-header text-center">
+                     <button aria-label="Close" class="close" data-dismiss="modal" type="button ">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p>دریافت نوبت  </p>
+
+                </div>
+                <!--Body-->
+                <div class="card-body mx-4">
+
+<p class="text-center text-black-50">همین حالا شماره همراه خود را وارد کنید تا مشاوران کلینیک مروارید جهت راهنمایی و مشاوره با شما تماس بگیرند</p>
+                    <div id="section1">
+                        <p id="invalid" class="text-danger"></p>
+
+                        <div class="md-form" dir="ltr">
+                            <input type="number" id="mobile" name="email" class="form-control text-center" placeholder="موبایل">
+
+                        </div>
+                        <p id="mobile_error" class="text-danger"></p>
+
+
+                        <div class="text-center mb-3">
+                            <button id="login" type="button"
+                                    class="btn  btn-dark  btn-block btn-rounded z-depth-1a text-white">ارسال
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+<!--        &lt;!&ndash; Start Loader &ndash;&gt;-->
+<!--        <div id="preloader">-->
+<!--            <div id="status">-->
+<!--                <div class="spinner">-->
+<!--                    <div class="rect1"></div>-->
+<!--                    <div class="rect2"></div>-->
+<!--                    <div class="rect3"></div>-->
+<!--                    <div class="rect4"></div>-->
+<!--                    <div class="rect5"></div>-->
+<!--                </div>&lt;!&ndash;end spinner&ndash;&gt;-->
+<!--            </div>&lt;!&ndash;end status&ndash;&gt;-->
+<!--        </div>&lt;!&ndash;end preloader&ndash;&gt;&lt;!&ndash;Note: (#preloader) write CSS in {"scss/_helper.scc"} (#preloader) write JS in {"js/app.js"} &ndash;&gt;-->
+<!--        &lt;!&ndash; End Loader &ndash;&gt;-->
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
+    		<div class="container">
+			    <a class="navbar-brand" href="#">
+                    <!-- Approze -->
+                    <a href="" class="text-success l-dark "  > <div class="btn-group"><i class="fa fa-phone fa-1x m-3"></i><h2 class=" ml-3">02146813751</h2> </div> </a>
+                    <a href="" class="text-danger l-light "  > <div class="btn-group"><i class="fa fa-user fa-1x m-3"></i><h2 class=" ml-3">09126145705</h2> </div> </a>
+
+<!--        /a          <img src="images/business/logo.png" class="l-dark" height="30" alt="">-->
+<!--                    <img src="images/business/logo-light.png" class="l-light" height="30" alt="">-->
+                </a>
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			        <span class="mdi mdi-menu"></span>
+			    </button><!--end button-->
+
+			    <div class="collapse navbar-collapse" id="navbarCollapse">
+			        <ul class="navbar-nav ml-auto">
+			            <li class="nav-item active">
+			                <a class="nav-link" href="#home">صفحه اصلی</a>
+			            </li><!--end nav item-->
+			            <li class="nav-item">
+			                <a class="nav-link" href="#services">خدمات</a>
+			            </li><!--end nav item-->
+			            <li class="nav-item">
+			                <a class="nav-link" href="#team">تیم</a>
+			            </li><!--end nav item-->
+			            <li class="nav-item">
+			                <a class="nav-link" href="#price">قیمت</a>
+			            </li><!--end nav item-->
+			            <li class="nav-item">
+			                <a class="nav-link" href="#blog">اخبار</a>
+			            </li><!--end nav item-->
+			            <li class="nav-item">
+			                <a class="nav-link" href="#contact">تماس</a>
+			            </li><!--end nav item-->
+                    </ul><!--end navbar nav-->
+			    </div><!--end collapse-->
+		    </div><!--end container-->
+		</nav><!--end navbar-->
+        <!-- Navbar End -->
+
+        <!-- HOME START-->
+        <section class="home-slider position-relative" id="home">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image:url('images/business/01.jpg');">
+                        <div class="bg-overlay"></div>
+                        <div class="home-center">
+                            <div class="home-desc-center">
+                                <div class="container-fluid">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-12">
+                                            <div class="title-heading text-center mt-5 pt-4">
+                                                <h1 class="heading text-white text-capitalize mb-3 animated fadeInUpBig animation-delay-1">بزرگترین و مجهز ترین کلینیک لیزر موهای زائد در شهر قدس</h1>
+                                                <p class="para-desc text-white  mx-auto animated fadeInUpBig animation-delay-7"> همین الان شماره تو وارد کن تا با شما تماس بگیریم</p>
+                                                <div class="mt-4 pt-2 animated fadeInUpBig animation-delay-12">
+<!--                                                    <a href="javascript:void(0)" class="btn  btn-outline-white mr-2 mb-2">بررسیش کن</a>-->
+
+                                                    <a href="#login" data-toggle="modal" data-target="#login_modal" class="btn btn-custom mr-2 mb-2"> دریافت نوبت</a>
+                                                </div>
+                                            </div>
+                                        </div><!--end col-->
+                                    </div><!--end row-->
+                                </div><!--end container-fluid-->
+                            </div>
+                        </div>
+                    </div><!--end carousel item-->
+
+                    <div class="carousel-item" style="background-image:url('images/business/02.jpg');">
+                        <div class="bg-overlay"></div>
+                        <div class="home-center">
+                            <div class="home-desc-center">
+                                <div class="container-fluid">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-12">
+                                            <div class="title-heading text-center mt-5 pt-4">
+                                                <h1 class="heading text-white text-capitalize mb-3 animated fadeInUpBig animation-delay-1">ما راه حل های تجاری ارائه می دهیم</h1>
+                                                <p class="para-desc text-white-50 mx-auto animated fadeInUpBig animation-delay-7">رنگ رویایی خود را چاپ کنید خانه خود را به رنگهای پر جنب و جوش ببرید. ما ارائه خدمات انعطاف پذیر برای اسکان را در اولویت قرار می دهیم</p>
+                                                <div class="mt-4 pt-2 animated fadeInUpBig animation-delay-12">
+                                                    <a href="javascript:void(0)" class="btn btn-custom mr-2 mb-2">درباره ما</a>
+                                                    <a href="javascript:void(0)" class="btn btn-outline-white mb-2">تماس با ما</a>
+                                                </div>
+                                            </div>
+                                        </div><!--end col-->
+                                    </div><!--end row-->
+                                </div><!--end container-fluid-->
+                            </div>
+                        </div>
+                    </div><!--end carousel item-->
+
+                    <div class="carousel-item" style="background-image:url('images/business/03.jpg');">
+                        <div class="bg-overlay"></div>
+                        <div class="home-center">
+                            <div class="home-desc-center">
+                                <div class="container-fluid">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-12">
+                                            <div class="title-heading text-center mt-5 pt-4">
+                                                <h1 class="heading text-white text-capitalize mb-3 animated fadeInUpBig animation-delay-1">برای تجارت شما ساخته شده است</h1>
+                                                <p class="para-desc text-white-50 mx-auto animated fadeInUpBig animation-delay-7">رنگ رویایی خود را چاپ کنید خانه خود را به رنگهای پر جنب و جوش ببرید. ما ارائه خدمات انعطاف پذیر برای اسکان را در اولویت قرار می دهیم</p>
+                                                <div class="mt-4 pt-2 animated fadeInUpBig animation-delay-12">
+                                                    <a href="javascript:void(0)" class="btn btn-custom mr-2 mb-2">خرید کنید</a>
+                                                    <a href="javascript:void(0)" class="btn btn-outline-white mb-2">تماس با ما</a>
+                                                </div>
+                                            </div>
+                                        </div><!--end col-->
+                                    </div><!--end row-->
+                                </div><!--end container-fluid-->
+                            </div>
+                        </div>
+                    </div><!--end carousel item-->
+                </div><!--end carousel inner-->
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">قبلی</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">بعدی</span>
+                </a>
+            </div><!--end carousel-->
+        </section><!--end section-->
+        <!-- HOME END-->
+
+        <!-- FEATURES START -->
+        <section class="section pb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="features features-two p-4 pt-5 pb-5 shadow rounded bg-white text-center">
+                            <img src="images/business/collaboration.png" class="img-fluid" alt="">
+                            <h4 class="title text-uppercase mt-3">سازمان</h4>
+                            <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
+                            <a href="javascript:void(0)" class="text-dark">مطالعه بیشتر <i class="mdi mdi-chevron-right"></i></a>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-md-4">
+                        <div class="features features-two p-4 pt-5 pb-5 shadow rounded bg-white text-center">
+                            <img src="images/business/ideas.png" class="img-fluid" alt="">
+                            <h4 class="title text-uppercase mt-3">بازار یابی آنلاین</h4>
+                            <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.. </p>
+                            <a href="javascript:void(0)" class="text-dark">مطالعه بیشتر <i class="mdi mdi-chevron-right"></i></a>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-md-4">
+                        <div class="features features-two mb-0 p-4 pt-5 pb-5 shadow rounded bg-white text-center">
+                            <img src="images/business/risks.png" class="img-fluid" alt="">
+                            <h4 class="title text-uppercase mt-3">آنالیز ریسک</h4>
+                            <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.. </p>
+                            <a href="javascript:void(0)" class="text-dark">مطالعه بیشتر <i class="mdi mdi-chevron-right"></i></a>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end conatiner-->
+        </section><!--end section-->
+        <!-- FEATURES End -->
+
+        <!-- Start About -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-6">
+                        <div class="section-title mb-0 mr-0 mr-md-4">
+                            <h4 class="title text-uppercase mb-4">درباره کلینیک مروارید</h4>
+                            <p class="text-muted">لیزر رفع موهای زائد دستگاهی است که فرایند از بین بردن مو‌های ناخواسته یا موهای زائد را با استفاده از قرار گرفتن در معرض پالس لیزر نور انجام می‌دهد و منجر به از بین بردن فولیکول مو و عدم رشد مجدد مو می‌شود. امروزه ليزرها براي درمان و همچنين براي زيبايي چهره و بدن استفاده مي‌شوند.
+                                كلينيك ليزر مروارید  در سال ۱۳92 تأسيس‌شده است كه تحت نظر پزشکان مجرب اقدام به لیزرموهای زاید نواحی مختلف بدن و صورت  می نماید هم چنین با انجام دیگر کارهای متنوع به مشكلات زيبايي مي‌پردازد.
+                                وجه تمايز كلينيك ليزر مروارید با دیگر کلینیک های موجود در این منطقه  اين است كه   این کلینیک   به صورت تمام وقت و حتی روزهای تعطیل اماده ارایه تمام خدمات مرتبط با پوست و مو می باشد  هم چنین داشتن فضای ارام و بزرگ و طراحی شیک  و تهویه مناسب پرسنل مجرب و با اخلاق   تمای  شرایط موردنیاز جهت حفظ ارامش بیماران و مشتریان  را  فراهم اورده است.
+                                شايان‌ذكر است كه استفاده از دستگاه‌هاي به‌روز دنيا مجهز به سيستم‌هاي خنك‌كننده قوي، درمان مؤثر، ايمن و بدون عارضه‌اي را براي مراجعين به ارمغان آورده است. استقبال چشمگير مراجعين از نحوه خدمت رساني و همچنين اثربخشي دستگاه‌هاي ليزر بدون كمترين عارضه در طول ساليان گواه اين امر است.
+                            </p>
+                             <a href="javascript:void(0)" class="btn btn-custom">مطالعه بیشتر <i class="mdi mdi-chevron-right"></i></a>
+                        </div><!--end section title-->
+                    </div><!--end col-->
+
+                    <div class="col-lg-5 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="position-relative">                            
+                            <img src="images/business/about.jpg" class="img-fluid shadow rounded" alt="">
+                            <div class="play-icon">
+                                <a href="http://vimeo.com/7396421" class="video-play-icon text-center" title="تماشا کن">
+                                    <i class="mdi mdi-play text-white rounded-pill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End About -->
+
+        <!-- Start Services -->
+        <section class="section bg-light" id="services">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title text-uppercase mb-4">خدمات کلینیک</h4>
+                            <p class="text-muted mx-auto para-desc mb-0">رنگ رویایی خود را چاپ کنید خانه خود را به رنگهای پر جنب و جوش ببرید. ما ارائه خدمات انعطاف پذیر برای اسکان را در اولویت قرار می دهیم برا نیاز های شما</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="service-container border-color border rounded p-4 text-center">
+                            <div class="number-icon position-relative">
+                                <div class="icon-2 d-inline-block border rounded-pill">
+                                    <i class="pe-7s-shield text-custom"></i>
+                                </div>
+
+                                <div class="number text-center rounded-pill bg-white border">
+                                    <span class="font-weight-bold">01</span>
+                                </div>
+                            </div>
+
+                            <div class="content mt-3">
+                                <h4 class="title text-dark">لیزر موهای زاید</h4>
+                                <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                <a href="javascript:void(0)" class="text-dark">مطالعه بیشتر <i class="mdi mdi-chevron-right"></i></a>
+                            </div>
+                        </div><!--end service container-->
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="service-container border-color border rounded p-4 text-center">
+                            <div class="number-icon position-relative">
+                                <div class="icon-2 d-inline-block border rounded-pill">
+                                    <i class="pe-7s-way text-custom"></i>
+                                </div>
+
+                                <div class="number text-center rounded-pill bg-white border">
+                                    <span class="font-weight-bold">02</span>
+                                </div>
+                            </div>
+
+                            <div class="content mt-3">
+                                <h4 class="title text-dark"> هاشور ابرو و آرایش دایم صورت</h4>
+                                <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                <a href="javascript:void(0)" class="text-dark">مطالعه بیشتر <i class="mdi mdi-chevron-right"></i></a>
+                            </div>
+                        </div><!--end service container-->
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="service-container border-color border rounded p-4 text-center">
+                            <div class="number-icon position-relative">
+                                <div class="icon-2 d-inline-block border rounded-pill">
+                                    <i class="pe-7s-note2 text-custom"></i>
+                                </div>
+
+                                <div class="number text-center rounded-pill bg-white border">
+                                    <span class="font-weight-bold">03</span>
+                                </div>
+                            </div>
+
+                            <div class="content mt-3">
+                                <h4 class="title text-dark">پاکسازی پوست</h4>
+                                <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                <a href="javascript:void(0)" class="text-dark">مطالعه بیشتر <i class="mdi mdi-chevron-right"></i></a>
+                            </div>
+                        </div><!--end service container-->
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="service-container border-color border rounded p-4 text-center">
+                            <div class="number-icon position-relative">
+                                <div class="icon-2 d-inline-block border rounded-pill">
+                                    <i class="pe-7s-world text-custom"></i>
+                                </div>
+
+                                <div class="number text-center rounded-pill bg-white border">
+                                    <span class="font-weight-bold">04</span>
+                                </div>
+                            </div>
+
+                            <div class="content mt-3">
+                                <h4 class="title text-dark">  کربوکسی تراپی</h4>
+                                <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                <a href="javascript:void(0)" class="text-dark">مطالعه بیشتر <i class="mdi mdi-chevron-right"></i></a>
+                            </div>
+                        </div><!--end service container-->
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="service-container border-color border rounded p-4 text-center">
+                            <div class="number-icon position-relative">
+                                <div class="icon-2 d-inline-block border rounded-pill">
+                                    <i class="pe-7s-anchor text-custom"></i>
+                                </div>
+
+                                <div class="number text-center rounded-pill bg-white border">
+                                    <span class="font-weight-bold">05</span>
+                                </div>
+                            </div>
+
+                            <div class="content mt-3">
+                                <h4 class="title text-dark">  تزریق ژل و بوتاکس</h4>
+                                <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                <a href="javascript:void(0)" class="text-dark">مطالعه بیشتر <i class="mdi mdi-chevron-right"></i></a>
+                            </div>
+                        </div><!--end service container-->
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="service-container border-color border rounded p-4 text-center">
+                            <div class="number-icon position-relative">
+                                <div class="icon-2 d-inline-block border rounded-pill">
+                                    <i class="pe-7s-plane text-custom"></i>
+                                </div>
+
+                                <div class="number text-center rounded-pill bg-white border">
+                                    <span class="font-weight-bold">06</span>
+                                </div>
+                            </div>
+
+                            <div class="content mt-3">
+                                <h4 class="title text-dark">  میکرونیدلینگ</h4>
+                                <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                <a href="javascript:void(0)" class="text-dark">مطالعه بیشتر <i class="mdi mdi-chevron-right"></i></a>
+                            </div>
+                        </div><!--end service container-->
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End Services -->
+
+        <!-- Start Counter -->
+        <section class="section" data-jarallax='{"speed": 0.5}' style="background: url('images/business/01.jpg') center center;">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title text-center">
+                            <h4 class="title text-white text-uppercase mb-4">کار درست را انجام دادن یک هنر است.</h4>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row" id="counter">
+                    <div class="col-md-3 col-6 mt-4 pt-2">
+                        <div class="counter-box text-center">
+                            <div class="counter-icon-img">
+                                <i class="pe-7s-portfolio text-white"></i>
+                            </div>
+                            <h2 class="counter-value mt-3 text-white" data-count="1542">10</h2>
+                            <h5 class="counter-head text-white">پروژه ها</h5>
+                        </div><!--end counter box-->
+                    </div><!--end col-->
+
+                    <div class="col-md-3 col-6 mt-4 pt-2">
+                        <div class="counter-box text-center">
+                            <div class="counter-icon-img">
+                                <i class="pe-7s-user text-white"></i>
+                            </div>
+                            <h2 class="counter-value mt-3 text-white" data-count="53">4</h2>
+                            <h5 class="counter-head text-white">تیم</h5>
+                        </div><!--end counter box-->
+                    </div><!--end col-->
+
+                    <div class="col-md-3 col-6 mt-4 pt-2">
+                        <div class="counter-box text-center">
+                            <div class="counter-icon-img">
+                                <i class="pe-7s-medal text-white"></i>
+                            </div>
+                            <h2 class="counter-value mt-3 text-white" data-count="915">11</h2>
+                            <h5 class="counter-head text-white">مشتریان</h5>
+                        </div><!--end counter box-->
+                    </div><!--end col-->
+
+                    <div class="col-md-3 col-6 mt-4 pt-2">
+                        <div class="counter-box text-center">
+                            <div class="counter-icon-img">
+                                <i class="pe-7s-date text-white"></i>
+                            </div>
+                            <h2 class="counter-value mt-3 text-white" data-count="15">1</h2>
+                            <h5 class="counter-head text-white">تجربه سالی</h5>
+                        </div><!--end counter box-->
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row justify-content-center mt-5">
+                    <div class="col-12 text-center">
+                        <h5 class="text-white font-weight-normal">آیا پروژه ای در ذهن دارید؟ <a href="javascript:void(0)" class="btn btn-custom mt-4 mt-sm-0 ml-0 ml-md-4">تماس با ما</a></h5>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End Counter -->
+
+        <!-- Start Team -->
+        <section class="section" id="team">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title text-uppercase mb-4">    برخی از تجهیزات کلینیک مروراید</h4>
+                            <p class="text-muted mx-auto para-desc mb-0">رنگ رویایی خود را چاپ کنید خانه خود را به رنگهای پر جنب و جوش ببرید. ما ارائه خدمات انعطاف پذیر برای اسکان را در اولویت قرار می دهیم برای نیاز های شما</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="team-concept rounded text-center bg-white shadow">
+                            <div class="team-image position-relative">
+                                <img src="images/devices/001.jpg" class="img-fluid rounded-top" alt="">
+                                <div class="team-overlay bg-white text-center">
+                                    <ul class="list-unstyled social-icon mb-0">
+                                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-facebook"></i></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-dribbble"></i></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-twitter"></i></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-linkedin"></i></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-telegram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content pt-4 pb-4">
+                                <h4 class="name text-uppercase mb-0">   دستگاه لیز موهای زاید دایود</h4>
+                                <small class="designation font-italic text-muted">مدیر مالی</small>
+                            </div>
+                        </div><!--end team-concept-->
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="team-concept rounded text-center bg-white shadow">
+                            <div class="team-image position-relative">
+                                <img src="images/devices/002.jpg" class="img-fluid rounded-top" alt="">
+                                <div class="team-overlay bg-white text-center">
+                                    <ul class="list-unstyled social-icon mb-0">
+                                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-facebook"></i></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-dribbble"></i></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-twitter"></i></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-linkedin"></i></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-telegram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content pt-4 pb-4">
+                                <h4 class="name text-uppercase mb-0">  دستگاه لیز موهای زاید E-light shr</h4>
+                                <small class="designation font-italic text-muted">مدیر مالی</small>
+                            </div>
+                        </div><!--end team-concept-->
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="team-concept rounded text-center bg-white shadow">
+                            <div class="team-image position-relative">
+                                <img src="images/devices/003.jpg" class="img-fluid rounded-top" alt="">
+                                <div class="team-overlay bg-white text-center">
+                                    <ul class="list-unstyled social-icon mb-0">
+                                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-facebook"></i></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-dribbble"></i></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-twitter"></i></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-linkedin"></i></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-telegram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content pt-4 pb-4">
+                                <h4 class="name text-uppercase mb-0">دستگاه میکرودرم ابریژن   </h4>
+                                <small class="designation font-italic text-muted">مدیر مالی</small>
+                            </div>
+                        </div><!--end team-concept-->
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="team-concept rounded text-center bg-white shadow">
+                            <div class="team-image position-relative">
+                                <img src="images/devices/004.jpg" class="img-fluid rounded-top" alt="">
+                                <div class="team-overlay bg-white text-center">
+                                    <ul class="list-unstyled social-icon mb-0">
+                                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-facebook"></i></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-dribbble"></i></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-twitter"></i></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-linkedin"></i></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-telegram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content pt-4 pb-4">
+                                <h4 class="name text-uppercase mb-0">  دستگاه کربوکسی تراپی </h4>
+                                <small class="designation font-italic text-muted">مدیر مالی</small>
+                            </div>
+                        </div><!--end team-concept-->
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End Team -->
+
+        <!-- Cta image Start -->
+
+        <!-- Cta image end -->
+
+        <!-- Start Price -->
+        <section class="section" id="price">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title text-uppercase mb-4">نرخ های ما</h4>
+                            <p class="text-muted mx-auto para-desc mb-0">رنگ رویایی خود را چاپ کنید خانه خود را به رنگهای پر جنب و جوش ببرید. ما ارائه خدمات انعطاف پذیر برای اسکان را در اولویت قرار می دهیم برای نیاز های شما</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="pricing-table border text-center rounded bg-white">
+                            <h3 class="price-title p-4 bg-light mb-0">پکیج کاربردی</h3>
+                            <div class="pricing-features">
+                                <ul class="list-unstyled p-4 mb-0">
+                                    <li class="border-0">  دست کامل</li>
+                                    <li class="border-0">  پا کامل</li>
+                                    <li class="border-0">  زیر بغل و بکینی  </li>
+                                    <li class="border-0">  صورت کامل</li>
+                                    <li class="border-0">  خط شکم</li>
+
+
+
+                                </ul>
+                            </div>
+                            <div class="price-value p-4 position-relative bg-light">
+                                <div class="price-lable">
+                                    <h4 class="mb-0 rates">315,000 تومان</h4>
+                                </div>
+                            </div>
+                            <div class="price-button p-4">
+                                <a href="#" class="btn btn-custom w-100">اکنون وارد شوید</a>
+                            </div>
+                        </div><!-- end pricing table -->
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="pricing-table border text-center rounded bg-white">
+                            <h3 class="price-title p-4 text-light bg-custom mb-0">پکیج طلایی</h3>
+                            <div class="pricing-features">
+                                <ul class="list-unstyled p-4 mb-0">
+                                    <li class="border-0">     فول بادی کامل (کل بدن)</li>
+                                    <li class="border-0">    صورت کامل</li>
+
+
+                                </ul>
+                            </div>
+                            <div class="price-value p-4 position-relative bg-light">
+                                <div class="price-lable">
+                                    <h4 class="mb-0 rates">415,000 تومان</h4>
+
+                                </div>
+                            </div>
+                            <div class="price-button p-4">
+                                <a href="#" class="btn btn-custom w-100">اکنون وارد شوید</a>
+                            </div>
+                        </div><!-- end pricing table -->
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="pricing-table shadow text-center rounded bg-white">
+                            <div class="lable text-center bg-custom pt-2 pb-2">
+                                <h6 class="best text-white mb-0 text-uppercase">    *</h6>
+                            </div>
+                            <h3 class="price-title p-4 bg-light mb-0">پکیج نقره ای</h3>
+                            <div class="pricing-features">
+                                <ul class="list-unstyled p-4 mb-0">
+                                    <li class="border-0">  دست کامل</li>
+                                    <li class="border-0">  پا کامل</li>
+                                    <li class="border-0">  زیر بغل و بکینی  </li>
+                                    <li class="border-0">  صورت کامل</li>
+                                    <li class="border-0">  خط شکم</li>
+
+
+
+                                </ul>
+                            </div>
+                            <div class="price-value p-4 position-relative bg-light">
+                                <div class="price-lable">
+                                    <h4 class="mb-0 rates">315,000 تومان</h4>
+                                </div>
+                            </div>
+                            <div class="price-button p-4">
+                                <a href="#" class="btn btn-custom w-100">اکنون وارد شوید</a>
+                            </div>
+                        </div><!-- end pricing table -->
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="pricing-table border text-center rounded bg-white">
+                            <h3 class="price-title p-4 bg-light mb-0">پکیج برنزی</h3>
+                            <div class="pricing-features">
+                                <ul class="list-unstyled p-4 mb-0">
+                                    <li class="border-0">  دست کامل</li>
+                                    <li class="border-0">  پا کامل</li>
+                                    <li class="border-0">  زیر بغل و بکینی  </li>
+                                    <li class="border-0">  صورت کامل</li>
+                                    <li class="border-0">  خط شکم</li>
+
+
+
+                                </ul>
+                            </div>
+                            <div class="price-value p-4 position-relative bg-light">
+                                <div class="price-lable">
+                                    <h4 class="mb-0 rates">315,000 تومان</h4>
+                                </div>
+                            </div>
+                            <div class="price-button p-4">
+                                <a href="#" class="btn btn-custom w-100">اکنون وارد شوید</a>
+                            </div>
+                        </div><!-- end pricing table -->
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End Price -->
+
+        <!-- Start Testi -->
+        <section class="section" data-jarallax='{"speed": 0.5}' style="background: url('images/business/04.jpg') center center;">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <div class="testi-review">
+                            <div id="testimonial-resto" class="owl-carousel">
+                                <div class="testimonial text-center ml-3 mr-3">
+                                    <img src="images/client/01.jpg" class="img-fluid rounded-pill" alt="">
+                                    <div class="content-review">
+                                        <p class="review font-italic text-light mt-3">" لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم استلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است"</p>
+                                        <ul class="list-unstyled mb-0 h6">
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-custom"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-custom"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-custom"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-custom"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-custom"></i></li>
+                                        </ul>
+                                        <h5 class="name mb-1 mt-3 text-light">جعفر عباسی</h5>
+                                    </div>
+                                </div><!--end content-->
+
+                                <div class="testimonial text-center ml-3 mr-3">
+                                    <img src="images/client/02.jpg" class="img-fluid rounded-pill" alt="">
+                                    <div class="content-review">
+                                        <p class="review font-italic text-light mt-3">" لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم استلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است "</p>
+                                        <ul class="list-unstyled mb-0 h6">
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-custom"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-custom"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-custom"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-custom"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-custom"></i></li>
+                                        </ul>
+                                        <h5 class="name mb-1 mt-3 text-light">جعفر عباسی</h5>
+                                    </div>
+                                </div><!--end content-->
+
+                                <div class="testimonial text-center ml-3 mr-3">
+                                    <img src="images/client/03.jpg" class="img-fluid rounded-pill" alt="">
+                                    <div class="content-review">
+                                        <p class="review font-italic text-light mt-3">" لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم استلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است "</p>
+                                        <ul class="list-unstyled mb-0 h6">
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-custom"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-custom"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-custom"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-custom"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-custom"></i></li>
+                                        </ul>
+                                        <h5 class="name mb-1 mt-3 text-light">طاهر نصیری</h5>
+                                    </div>
+                                </div><!--end content-->
+                            </div><!--end testimonial-resto-->
+                        </div><!--end testi-review-->
+                    </div> <!-- end col -->
+                </div> <!-- end row -->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End Testi -->
+
+        <!-- Start News -->
+        <section class="section" id="blog">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title text-center">
+                            <h4 class="title text-uppercase mb-4">اخبار و بلاگ ما</h4>
+                            <p class="text-muted mx-auto para-desc mb-0">رنگ رویایی خود را چاپ کنید خانه خود را به رنگهای پر جنب و جوش ببرید. ما ارائه خدمات انعطاف پذیر برای اسکان را در اولویت قرار می دهیم</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="blog-post rounded shadow">
+                            <img src="images/business/blog01.jpg" class="img-fluid rounded-top" alt="">
+                            <div class="content pt-4 pb-4 p-3">
+                                <a href="javascript:void(0)"><h6 class="tag text-custom font-weight-normal">ملاقات</h6></a>
+                                <a href="javascript:void(0)"><h4 class="title text-dark">چگونه می توان بهره وری را افزایش داد؟</h4></a>
+                                <p class="text-muted pb-3 border-bottom">این یک فرهنگ لغت از بیش از 200 کلمه لاتین ، همراه با تعداد انگشت شماری از ساختارهای جمله</p>
+                                <ul class="list-unstyled post-meta mb-0">
+                                    <li class="float-right"><a href="javascript:void(0)" class="text-dark">مطالعه بیشتر <i class="mdi mdi-chevron-right ml-1"></i></a></li>
+                                    <li class="text-muted"><i class="mdi mdi-calendar-edit mr-1"></i>مرداد 1398 </li>
+                                </ul>
+                            </div><!--end content-->
+                        </div><!--end blog post-->
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="blog-post rounded shadow">
+                            <img src="images/business/blog02.jpg" class="img-fluid rounded-top" alt="">
+                            <div class="content pt-4 pb-4 p-3">
+                                <a href="javascript:void(0)"><h6 class="tag text-custom font-weight-normal">مالی</h6></a>
+                                <a href="javascript:void(0)"><h4 class="title text-dark">تحلیل گزارش مالی</h4></a>
+                                <p class="text-muted pb-3 border-bottom">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                <ul class="list-unstyled post-meta mb-0">
+                                    <li class="float-right"><a href="javascript:void(0)" class="text-dark">مطالعه بیشتر <i class="mdi mdi-chevron-right ml-1"></i></a></li>
+                                    <li class="text-muted"><i class="mdi mdi-calendar-edit mr-1"></i>مرداد 1398 </li>
+                                </ul>
+                            </div><!--end content-->
+                        </div><!--end blog post-->
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="blog-post rounded shadow">
+                            <img src="images/business/blog03.jpg" class="img-fluid rounded-top" alt="">
+                            <div class="content pt-4 pb-4 p-3">
+                                <a href="javascript:void(0)"><h6 class="tag text-custom font-weight-normal">زیردستان</h6></a>
+                                <a href="javascript:void(0)"><h4 class="title text-dark">جلسات سالانه با کارگران</h4></a>
+                                <p class="text-muted pb-3 border-bottom">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                <ul class="list-unstyled post-meta mb-0">
+                                    <li class="float-right"><a href="javascript:void(0)" class="text-dark">مطالعه بیشتر <i class="mdi mdi-chevron-right ml-1"></i></a></li>
+                                    <li class="text-muted"><i class="mdi mdi-calendar-edit mr-1"></i>مرداد 1398 </li>
+                                </ul>
+                            </div><!--end content-->
+                        </div><!--end blog post-->
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End News -->
+
+
+
+
+
+        <footer class="footer bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 mt-4 pt-2">
+                        <img src="images/business/logo-light.png" height="30" alt="">
+                        <p class="text-foot mt-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                        <ul class="list-unstyled social-icon social mb-0">
+                            <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-facebook" title="facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-linkedin" title="linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-dribbble" title="dribbble"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-instagram" title="instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-twitter" title="twitter"></i></a></li>
+                        </ul>
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-4 mt-4 pt-2">
+                        <h4 class="text-light text-uppercase footer-head">لینک ها</h4>
+                        <ul class="list-unstyled footer-list mt-4">
+                            <li><a href="javascript:void(0)" class="text-foot"><i class="mdi mdi-chevron-right mr-2"></i> درباره ریفابسی</a></li>
+                            <li><a href="javascript:void(0)" class="text-foot"><i class="mdi mdi-chevron-right mr-2"></i> حریم شخصی</a></li>
+                            <li><a href="javascript:void(0)" class="text-foot"><i class="mdi mdi-chevron-right mr-2"></i> داوطلب</a></li>
+                            <li><a href="javascript:void(0)" class="text-foot"><i class="mdi mdi-chevron-right mr-2"></i> علل محبوب</a></li>
+                            <li><a href="javascript:void(0)" class="text-foot"><i class="mdi mdi-chevron-right mr-2"></i> رویدادهای آینده</a></li>
+                        </ul>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <h4 class="text-light text-uppercase footer-head">پشتیبانی های ما</h4>
+                        <ul class="list-unstyled footer-list mt-4">
+                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-2"></i> تماس با ما</a></li>
+                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-2"></i> ارسال تیکت</a></li>
+                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-2"></i> حریم ریفابسی</a></li>
+                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-2"></i> خدمات پس از فروش</a></li>
+                        </ul>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-4 mt-4 pt-2">
+                        <h4 class="text-light text-uppercase footer-head">ساعات کارس</h4>
+                        <ul class="list-unstyled text-foot mt-4 mb-0">
+                            <li>شنبه - چهار شنبه : 9:00 از 17:00</li>
+                            <li class="mt-2">پنج شنبه : 10:00 از 15:00</li>
+                            <li class="mt-2">جمعه : تعطیل</li>
+                        </ul>
+
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer>
+        <hr>
+        <footer class="footer-two bg-dark text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <p class="mb-0">© 1398 کلیه حقوق این سایت متعلق به کلینیک مروارید می باشد <i class="mdi mdi-heart text-danger"></i>  </p>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+
+        <a href="#" class="back-to-top text-center shadow rounded-pill border" id="back-to-top"> 
+            <i class="mdi mdi-chevron-up d-block"> </i> 
+        </a>
+
+
+
+        <!-- javascript -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/scrollspy.min.js"></script>
+        <!-- SLIDER -->
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/owlcarousel.init.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/slick.init.js"></script>
+        <!-- Portfolio -->
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/isotope.js"></script>
+        <script src="js/portfolio-filter.js"></script> 
+        <script src="js/magnific.init.js"></script> 
+        <!-- parallax -->
+        <script src="js/parallax.js"></script>
+        <!-- Counter -->
+        <script src="js/counter.init.js"></script>
+        <!-- Contact -->
+        <script src="js/contact.js"></script>
+        <!-- Main Js -->
+        <script src="js/app.js"></script>
+    </body>
+
+</html>

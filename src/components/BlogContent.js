@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
 import Meta from "./Meta";
 const meta={
-    title:'BlogDetail',
+    title:'BlogDetail1',
     keywords:'BlogDetail',
     description:'BlogDetail',
 }
 
-export default class BlogDetail extends Component {
+export default class BlogContent extends Component {
     componentDidMount () {
         const { handle } = this.props.match.params;
-        console.log(this.props.match.params);
+        console.log(this.props.match);
         // fetch(`https://api.twitter.com/user/${handle}`)
         //     .then((user) => {
         //         this.setState(() => ({ user }))
@@ -20,9 +20,10 @@ export default class BlogDetail extends Component {
         return (
 
             <section className="section">
+                <Meta meta={meta}/>
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-lg-12 col-md-6">
+                        <div className="col-lg-12 col-md-12">
                             <div className="section-title mb-0 mr-0 mr-md-4">
                                 <h4 className="title text-uppercase mb-4">چگونه می توان بهره وری را افزایش داد؟</h4>
                                 <p className="text-muted">لیزر رفع موهای زائد دستگاهی است که فرایند از بین بردن مو‌های

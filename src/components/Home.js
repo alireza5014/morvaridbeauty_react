@@ -1,26 +1,34 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Switch, Redirect, Route} from 'react-router';
-import {BrowserRouter, Link} from 'react-router-dom';
+
 import AboutUs from "./AboutUs";
 import Device from "./Device";
 import Price from "./Price";
+import Slider from "./Slider";
+import Service from "./Service";
+import Blog from "./Blog";
+import Meta from "./Meta";
 
-
-class Routes extends React.Component {
+const meta={
+    title:'Home',
+    keywords:'Home',
+    description:'Home',
+}
+class Home extends React.Component {
   render() {
     return (
-        <BrowserRouter>
-          <div>
-            <Switch>
-              <Route exact path='/' component={Home}/>
-              <Route exact path='/about_us' component={AboutUs}/>
-              <Route exact path='/contact' component={Price}/>
-            </Switch>
-          </div>
-        </BrowserRouter>
+ <div>
+
+     <Slider/>
+     <AboutUs/>
+     <Service/>
+     <Price/>
+     <Device/>
+     <Blog/>
+     <Meta meta={meta} />
+
+ </div>
     );
   }
 }
 
-export default Routes;
+export default Home;

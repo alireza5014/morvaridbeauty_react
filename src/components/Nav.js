@@ -1,75 +1,105 @@
 import React, {Component} from 'react';
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
-export default class Footer extends Component {
+import Home from "./Home";
+import Service from "./Service";
+import Blog from "./Blog";
+import Device from "./Device";
+import AboutUs from "./AboutUs";
+import Price from "./Price";
+import {Route} from "react-router";
+import BlogContent from "./BlogContent";
+import ContactUs from "./ContactUs";
+
+export default class Nav extends Component {
     render() {
         return (
-            <footer className="footer bg-dark">
+            <Router>
+
+            <nav id="counter" className="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-lg-4 col-md-12 mt-4 pt-2">
-                            <img src="images/business/logo-light.png" height="30" alt=""/>
-                            <p className="text-foot mt-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                                با استفاده از طراحان گرافیک است.</p>
-                            <ul className="list-unstyled social-icon social mb-0">
-                                <li key={1} className="list-inline-item"> asas</li>
-                                <li key={2} className="list-inline-item"><a><i className="mdi mdi-linkedin"
-                                                                               title="linkedin"/></a></li>
-                                <li key={3} className="list-inline-item"><a><i className="mdi mdi-dribbble"
-                                                                               title="dribbble"/></a></li>
-                                <li key={4} className="list-inline-item"><a><i className="mdi mdi-instagram"
-                                                                               title="instagram"/></a></li>
-                                <li key={5} className="list-inline-item"><a><i className="mdi mdi-twitter"
-                                                                               title="twitter"/></a></li>
-                            </ul>
+                    <a className="navbar-brand" >
 
-                        </div>
-
-                        <div className="col-lg-2 col-md-4 mt-4 pt-2">
-                            <h4 className="text-light text-uppercase footer-head">لینک ها</h4>
-                            <ul className="list-unstyled footer-list mt-4">
-                                <li><a className="text-foot"><i className="mdi mdi-chevron-right  mr-2"></i> درباره
-                                    ریفابسی</a>
-                                </li>
-                                <li><a className="text-foot"><i className="mdi mdi-chevron-right mr-2"></i> حریم
-                                    شخصی</a></li>
-                                <li><a className="text-foot"><i className="mdi mdi-chevron-right mr-2"></i> داوطلب</a>
-                                </li>
-                                <li><a className="text-foot"><i className="mdi mdi-chevron-right mr-2"></i> علل
-                                    محبوب</a></li>
-                                <li><a className="text-foot"><i className="mdi mdi-chevron-right mr-2"></i> رویدادهای
-                                    آینده</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <a href="" className="text-success l-dark ">
+                            <div className="btn-group"><i className="fa fa-phone fa-1x m-3"/><h3
+                                className=" ml-3">02146813751</h3></div>
+                        </a>
+                        <a href="" className="text-white l-light ">
+                            <div className="btn-group"><i className="fa fa-user fa-1x m-3"/><h3
+                                className=" ml-3">09126145705</h3></div>
+                        </a>
 
 
-                        <div className="col-lg-3 col-md-6 mt-4 pt-2">
-                            <h4 className="text-light text-uppercase footer-head">پشتیبانی های ما</h4>
-                            <ul className="list-unstyled footer-list mt-4">
-                                <li><a className="text-foot"><i className="mdi mdi-chevron-right mr-2"></i> تماس با
-                                    ما</a></li>
-                                <li><a className="text-foot"><i className="mdi mdi-chevron-right mr-2"></i> ارسال
-                                    تیکت</a></li>
-                                <li><a className="text-foot"><i className="mdi mdi-chevron-right mr-2"></i> حریم ریفابسی</a>
-                                </li>
-                                <li><a className="text-foot"><i className="mdi mdi-chevron-right mr-2"></i> خدمات پس از
-                                    فروش</a></li>
-                            </ul>
-                        </div>
+                    </a>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span className="mdi mdi-menu"/>
+                    </button>
 
-                        <div className="col-lg-3 col-md-4 mt-4 pt-2">
-                            <h4 className="text-light text-uppercase footer-head">ساعات کارس</h4>
-                            <ul className="list-unstyled text-foot mt-4 mb-0">
-                                <li>شنبه - چهار شنبه : 9:00 از 17:00</li>
-                                <li className="mt-2">پنج شنبه : 10:00 از 15:00</li>
-                                <li className="mt-2">جمعه : تعطیل</li>
-                            </ul>
 
-                        </div>
+                    <div className="collapse navbar-collapse" id="navbarCollapse">
+                        <ul className="navbar-nav ml-auto">
+
+
+
+
+
+                            <li className="nav-item active">
+                                <Link className="nav-link text-black-50" to="/">خانه</Link>
+
+                            </li>
+
+                            <li className="nav-item">
+                                <Link className="nav-link text-black-50" to="/service">خدمات</Link>
+
+                            </li>
+
+                            <li className="nav-item">
+                                <Link className="nav-link text-black-50" to="/price">قیمت ها</Link>
+
+                            </li>
+
+
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/blog">بلاگ</Link>
+
+                            </li>
+
+
+
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/device">تجهیزات ما</Link>
+
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/about_us">درباره ما</Link>
+
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/contact_us">تماس ما</Link>
+
+                            </li>
+
+                        </ul>
+
                     </div>
+
                 </div>
-            </footer>
-        )
+
+            </nav>
+                <Route exact path='/'   component={Home}/>
+
+                <Route exact path='/price' component={Price}/>
+                <Route exact path='/device' component={Device}/>
+                <Route exact path='/blog' component={Blog}/>
+                <Route exact path='/service' component={Service}/>
+
+                <Route exact path='/blog-content/:category_slug/:post_slug' component={BlogContent}/>
+                <Route exact path='/about_us' component={AboutUs}/>
+                <Route exact path='/contact_us' component={ContactUs}/>
+            </Router>
+
+    )
     }
 }

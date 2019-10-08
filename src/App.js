@@ -1,26 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
+import $ from 'jquery';
+
+
 import './App.css';
+import './template/css/animate.css';
+import './template/css/animations-delay.css';
+import './template/css/bootstrap.min.css';
+import './template/css/magnific-popup.css';
+import './template/css/materialdesignicons.min.css';
+import './template/css/owl.carousel.min.css';
+import './template/css/owl.theme.css';
+import './template/css/owl.transitions.css';
+import './template/css/slick.css';
+import './template/css/slick-theme.css';
+import './template/css/style.css';
+
+
+import Footer from "./components/Footer";
+
+import Nav from "./components/Nav";
+// import $ from 'jquery';
+window.jQuery = $;
+window.$ = $;
+global.jQuery = $;
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            {/*<Routes/>*/}
+
+            <Nav/>
+
+
+            <Footer/>
+
+
+
+        </div>
+    );
 }
 
 export default App;

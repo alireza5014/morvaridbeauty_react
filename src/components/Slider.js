@@ -1,75 +1,123 @@
 import React, {Component} from 'react';
+import image_01 from '../../src/images/business/01.jpg'
+import image_02 from '../../src/images/business/02.jpg'
+import image_03 from '../../src/images/business/03.jpg'
 
-export default class Footer extends Component {
+export default class Slider extends Component {
     render() {
         return (
-            <footer className="footer bg-dark">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-4 col-md-12 mt-4 pt-2">
-                            <img src="images/business/logo-light.png" height="30" alt=""/>
-                            <p className="text-foot mt-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                                با استفاده از طراحان گرافیک است.</p>
-                            <ul className="list-unstyled social-icon social mb-0">
-                                <li key={1} className="list-inline-item"> asas</li>
-                                <li key={2} className="list-inline-item"><a><i className="mdi mdi-linkedin"
-                                                                               title="linkedin"/></a></li>
-                                <li key={3} className="list-inline-item"><a><i className="mdi mdi-dribbble"
-                                                                               title="dribbble"/></a></li>
-                                <li key={4} className="list-inline-item"><a><i className="mdi mdi-instagram"
-                                                                               title="instagram"/></a></li>
-                                <li key={5} className="list-inline-item"><a><i className="mdi mdi-twitter"
-                                                                               title="twitter"/></a></li>
-                            </ul>
+             <section className="home-slider position-relative" id="home">
 
-                        </div>
 
-                        <div className="col-lg-2 col-md-4 mt-4 pt-2">
-                            <h4 className="text-light text-uppercase footer-head">لینک ها</h4>
-                            <ul className="list-unstyled footer-list mt-4">
-                                <li><a className="text-foot"><i className="mdi mdi-chevron-right  mr-2"></i> درباره
-                                    ریفابسی</a>
-                                </li>
-                                <li><a className="text-foot"><i className="mdi mdi-chevron-right mr-2"></i> حریم
-                                    شخصی</a></li>
-                                <li><a className="text-foot"><i className="mdi mdi-chevron-right mr-2"></i> داوطلب</a>
-                                </li>
-                                <li><a className="text-foot"><i className="mdi mdi-chevron-right mr-2"></i> علل
-                                    محبوب</a></li>
-                                <li><a className="text-foot"><i className="mdi mdi-chevron-right mr-2"></i> رویدادهای
-                                    آینده</a>
-                                </li>
-                            </ul>
+                 <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+                    <div className="carousel-inner">
+                        <div className="carousel-item active"  style ={ { backgroundImage: "url("+image_01+")" } }>
+                            <div className="bg-overlay"/>
+                            <div className="home-center">
+                                <div className="home-desc-center">
+                                    <div className="container-fluid">
+                                        <div className="row justify-content-center">
+                                            <div className="col-lg-12">
+                                                <div className="title-heading text-center mt-5 pt-4">
+                                                    <h1 className="heading text-white text-capitalize mb-3 animated fadeInUpBig animation-delay-1">بزرگترین
+                                                        و مجهز ترین کلینیک لیزر موهای زائد در شهر قدس</h1>
+                                                    <p className="para-desc text-white  mx-auto animated fadeInUpBig animation-delay-7"> همین
+                                                        الان شماره تو وارد کن تا با شما تماس بگیریم</p>
+                                                    <div className="mt-4 pt-2 animated fadeInUpBig animation-delay-12">
+
+                                                        <a  onClick={'/'}  data-toggle="modal" data-target="#login_modal"
+                                                           className="btn btn-custom mr-2 mb-2"> دریافت نوبت</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
 
 
-                        <div className="col-lg-3 col-md-6 mt-4 pt-2">
-                            <h4 className="text-light text-uppercase footer-head">پشتیبانی های ما</h4>
-                            <ul className="list-unstyled footer-list mt-4">
-                                <li><a className="text-foot"><i className="mdi mdi-chevron-right mr-2"></i> تماس با
-                                    ما</a></li>
-                                <li><a className="text-foot"><i className="mdi mdi-chevron-right mr-2"></i> ارسال
-                                    تیکت</a></li>
-                                <li><a className="text-foot"><i className="mdi mdi-chevron-right mr-2"></i> حریم ریفابسی</a>
-                                </li>
-                                <li><a className="text-foot"><i className="mdi mdi-chevron-right mr-2"></i> خدمات پس از
-                                    فروش</a></li>
-                            </ul>
+                        <div className="carousel-item" style ={ { backgroundImage: "url("+image_02+")" } }>
+                            <div className="bg-overlay"/>
+                            <div className="home-center">
+                                <div className="home-desc-center">
+                                    <div className="container-fluid">
+                                        <div className="row justify-content-center">
+                                            <div className="col-lg-12">
+                                                <div className="title-heading text-center mt-5 pt-4">
+                                                    <h1 className="heading text-white text-capitalize mb-3 animated fadeInUpBig animation-delay-1">ما
+                                                        راه حل های تجاری ارائه می دهیم</h1>
+                                                    <p className="para-desc text-white-50 mx-auto animated fadeInUpBig animation-delay-7">رنگ
+                                                        رویایی خود را چاپ کنید خانه خود را به رنگهای پر جنب و جوش ببرید.
+                                                        ما ارائه خدمات انعطاف پذیر برای اسکان را در اولویت قرار می
+                                                        دهیم</p>
+                                                    <div className="mt-4 pt-2 animated fadeInUpBig animation-delay-12">
+                                                        <a  onClick={'/'}
+                                                           className="btn btn-custom mr-2 mb-2">درباره ما</a>
+                                                        <a  onClick={'/'}
+                                                           className="btn btn-outline-white mb-2">تماس با ما</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
 
-                        <div className="col-lg-3 col-md-4 mt-4 pt-2">
-                            <h4 className="text-light text-uppercase footer-head">ساعات کارس</h4>
-                            <ul className="list-unstyled text-foot mt-4 mb-0">
-                                <li>شنبه - چهار شنبه : 9:00 از 17:00</li>
-                                <li className="mt-2">پنج شنبه : 10:00 از 15:00</li>
-                                <li className="mt-2">جمعه : تعطیل</li>
-                            </ul>
 
+                        <div className="carousel-item" style ={ { backgroundImage: "url("+image_03+")" } }>
+                            <div className="bg-overlay"/>
+                            <div className="home-center">
+                                <div className="home-desc-center">
+                                    <div className="container-fluid">
+                                        <div className="row justify-content-center">
+                                            <div className="col-lg-12">
+                                                <div className="title-heading text-center mt-5 pt-4">
+                                                    <h1 className="heading text-white text-capitalize mb-3 animated fadeInUpBig animation-delay-1">برای
+                                                        تجارت شما ساخته شده است</h1>
+                                                    <p className="para-desc text-white-50 mx-auto animated fadeInUpBig animation-delay-7">رنگ
+                                                        رویایی خود را چاپ کنید خانه خود را به رنگهای پر جنب و جوش ببرید.
+                                                        ما ارائه خدمات انعطاف پذیر برای اسکان را در اولویت قرار می
+                                                        دهیم</p>
+                                                    <div className="mt-4 pt-2 animated fadeInUpBig animation-delay-12">
+                                                        <a  onClick={'/'}
+                                                           className="btn btn-custom mr-2 mb-2">خرید کنید</a>
+                                                        <a  onClick={'/'}
+                                                           className="btn btn-outline-white mb-2">تماس با ما</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
+
                     </div>
+
+                    <a  onClick={'/'} className="carousel-control-prev"  role="button" href={'#carouselExampleControls'}
+                       data-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true"/>
+                        <span className="sr-only">قبلی</span>
+                    </a>
+                    <a  onClick={'/'} className="carousel-control-next"   role="button"  href={'#carouselExampleControls'}
+                       data-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"/>
+                        <span className="sr-only">بعدی</span>
+                    </a>
                 </div>
-            </footer>
+
+            </section>
         )
     }
 }
