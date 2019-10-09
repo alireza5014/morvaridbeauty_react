@@ -5,17 +5,21 @@ export default class Meta extends Component {
 
 
     render() {
+        if (this.props.meta) {
+            return (
+                <Helmet>
+                    <title>{this.props.title}</title>
+                    {this.props.meta.map(item => (
+                        <meta name={item.key} content={item.value}/>
+                    ))}
+                </Helmet>
+            )
+        } else {
+            return (<Helmet>
+                <title>{this.props.title}</title>
 
-        return (
-
-            <Helmet >
-                <title>{this.props.meta.title}</title>
-                <meta name="keywords" content={this.props.meta.keywords}/>
-                <meta
-                    name="description"
-                    content={this.props.meta.description}
-                />
-            </Helmet>
-        )
+            </Helmet>);
+        }
     }
+
 }

@@ -91,12 +91,15 @@ export default class Nav extends Component {
                 <Route exact path='/'   component={Home}/>
 
                 <Route exact path='/price' component={Price}/>
-                <Route exact path='/device' component={Device}/>
-                <Route exact path='/blog' component={Blog}/>
-                <Route exact path='/service' component={Service}/>
+                <Route exact path='/device'   component={() => <Device limit={-1} />}/>
+
+                <Route exact path='/blog'
+                       component={() => <Blog limit={-1} />}
+                />
+                <Route exact path='/service'  component={() => <Service limit={-1} />}/>
 
                 <Route exact path='/blog-content/:category_slug/:post_slug' component={BlogContent}/>
-                <Route exact path='/about_us' component={AboutUs}/>
+                <Route exact path='/about_us'  component={() => <AboutUs more={false} />}/>
                 <Route exact path='/contact_us' component={ContactUs}/>
             </Router>
 
