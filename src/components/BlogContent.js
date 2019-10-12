@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Meta from "./Meta";
-
+import Parser from 'html-react-parser';
 const meta = {
     title: 'BlogDetail1',
     keywords: 'BlogDetail',
@@ -77,7 +77,8 @@ export default class BlogContent extends Component {
                                 <div className="section-title mb-0 mr-0 mr-md-4">
                                     <h4 className="title text-uppercase mb-4">{items.title}</h4>
                                     <p className="text-muted">
-                                        {items.content}
+                                   {Parser(""+items.content)}
+
                                     </p>
                                 </div>
                             </div>
