@@ -18,7 +18,7 @@ export default class Price extends Component {
 
 
     componentDidMount() {
-        fetch('http://localhost/morvaridbeauty/public/api/tariffe')
+        fetch('http://localhost/morvaridbeauty_laravel/public/api/tariffe')
             .then(response => response.json())
             .then(json => this.setState({
                 items: json.data,

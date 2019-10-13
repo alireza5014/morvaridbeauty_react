@@ -20,7 +20,7 @@ export default class Device extends Component {
 
 
     componentDidMount() {
-        fetch('http://localhost/morvaridbeauty/public/api/blog?category_slug=تجهیزات&&limit=' + this.props.limit)
+        fetch('http://localhost/morvaridbeauty_laravel/public/api/blog?category_slug=تجهیزات&&limit=' + this.props.limit)
             .then(response => response.json())
             .then(json => this.setState({
                 items: json.data.posts,
@@ -65,7 +65,7 @@ export default class Device extends Component {
                                 <div className="col-lg-3 col-md-6 mt-4 pt-2">
                                     <div className="team-concept rounded text-center bg-white shadow">
                                         <div className="team-image position-relative">
-                                            <img src={'http://localhost/morvaridbeauty/public'+item.image_path}
+                                            <img src={'http://localhost/morvaridbeauty_laravel/public'+item.image_path}
                                                  className="img-fluid rounded-top" alt="555"/>
 
                                         </div>

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Meta from "./Meta";
+import Parser from "html-react-parser";
 
 const meta = {
     title: 'ContactUs',
@@ -20,7 +21,7 @@ export default class ContactUs extends Component {
 
 
     componentDidMount() {
-        fetch('http://localhost/morvaridbeauty/public/api/contact_us')
+        fetch('http://localhost/morvaridbeauty_laravel/public/api/contact_us')
             .then(response => response.json())
             .then(json => this.setState({
                 data: json.data,
@@ -48,7 +49,10 @@ export default class ContactUs extends Component {
                             <div className="col-12 ">
                                 <div className="section-title">
                                     <h4 className="title text-uppercase mb-4">{data.title}</h4>
-                                    <p className="text-muted  " > {data.content}</p>
+                                    <p className="text-muted  " >
+                                        {Parser(""+data.content)}
+
+                                        </p>
                                 </div>
                             </div>
 

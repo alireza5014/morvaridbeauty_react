@@ -19,7 +19,7 @@ export default class Blog extends Component {
 
 
     componentDidMount() {
-        fetch('http://localhost/morvaridbeauty/public/api/blog?category_slug=بلاگ&&limit='+this.props.limit)
+        fetch('http://localhost/morvaridbeauty_laravel/public/api/blog?category_slug=بلاگ&&limit='+this.props.limit)
             .then(response => response.json())
             .then(json => this.setState({
                 items: json.data.posts,
@@ -67,7 +67,7 @@ export default class Blog extends Component {
                             {items.map(item => (
                                 <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                                     <div className="blog-post rounded shadow">
-                                        <img src={'http://localhost/morvaridbeauty/public' + item.image_path}
+                                        <img src={'http://localhost/morvaridbeauty_laravel/public' + item.image_path}
                                              className="img-fluid rounded-top"
                                              alt=""/>
                                         <div className="content pt-4 pb-4 p-3">
