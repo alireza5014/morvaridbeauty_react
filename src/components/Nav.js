@@ -11,6 +11,7 @@ import {Route} from "react-router";
 import BlogContent from "./BlogContent";
 import ContactUs from "./ContactUs";
 
+
 export default class Nav extends Component {
     render() {
         return (
@@ -101,7 +102,10 @@ export default class Nav extends Component {
                 <Route exact path='/blog-content/:category_slug/:post_slug' component={BlogContent}/>
                 <Route exact path='/about_us'  component={() => <AboutUs more={false} />}/>
                 <Route exact path='/contact_us' component={ContactUs}/>
+
+
             </Router>
+
 
     )
     }

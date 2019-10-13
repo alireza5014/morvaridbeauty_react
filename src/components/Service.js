@@ -25,7 +25,7 @@ export default class Service extends Component {
 
 
     componentDidMount() {
-        fetch('http://localhost/morvaridbeauty_laravel/public/api/blog?category_slug=خدمات&&limit=' + this.props.limit)
+        fetch(process.env.REACT_APP_API_URL+'/blog?category_slug=خدمات&&limit=' + this.props.limit)
             .then(response => response.json())
             .then(json => this.setState({
                 items: json.data.posts,
@@ -54,10 +54,7 @@ export default class Service extends Component {
                             <div className="col-12 text-center">
                                 <div className="section-title">
                                     <h4 className="title text-uppercase mb-4">خدمات کلینیک</h4>
-                                    <p className="text-muted mx-auto para-desc mb-0">رنگ رویایی خود را چاپ کنید خانه خود
-                                        را
-                                        به رنگهای پر جنب و جوش ببرید. ما ارائه خدمات انعطاف پذیر برای اسکان را در اولویت
-                                        قرار می دهیم برا نیاز های شما</p>
+
                                 </div>
                             </div>
 
@@ -73,7 +70,7 @@ export default class Service extends Component {
                                     <div className="service-container border-color border rounded p-4 text-center">
                                         <div className="number-icon position-relative">
                                             <div className="icon-2 d-inline-block border rounded-pill">
-                                               <img className={'rounded-circle'} src={'http://localhost/morvaridbeauty_laravel/public' + item.image_path} width={'60px'}/>
+                                               <img className={'rounded-circle'} src={process.env.REACT_APP_BASE_URL + item.image_path} width={'60px'}/>
                                             </div>
 
                                             <div className="number text-center rounded-pill bg-white border">

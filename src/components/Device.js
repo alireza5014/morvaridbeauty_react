@@ -20,7 +20,7 @@ export default class Device extends Component {
 
 
     componentDidMount() {
-        fetch('http://localhost/morvaridbeauty_laravel/public/api/blog?category_slug=تجهیزات&&limit=' + this.props.limit)
+        fetch(process.env.REACT_APP_API_URL+'/blog?category_slug=تجهیزات&&limit=' + this.props.limit)
             .then(response => response.json())
             .then(json => this.setState({
                 items: json.data.posts,
@@ -49,10 +49,7 @@ export default class Device extends Component {
                             <div className="col-12 text-center">
                                 <div className="section-title">
                                     <h4 className="title text-uppercase mb-4"> برخی از تجهیزات کلینیک مروراید</h4>
-                                    <p className="text-muted mx-auto para-desc mb-0">رنگ رویایی خود را چاپ کنید خانه خود
-                                        را
-                                        به رنگهای پر جنب و جوش ببرید. ما ارائه خدمات انعطاف پذیر برای اسکان را در اولویت
-                                        قرار می دهیم برای نیاز های شما</p>
+
                                 </div>
                             </div>
 
@@ -65,7 +62,7 @@ export default class Device extends Component {
                                 <div className="col-lg-3 col-md-6 mt-4 pt-2">
                                     <div className="team-concept rounded text-center bg-white shadow">
                                         <div className="team-image position-relative">
-                                            <img src={'http://localhost/morvaridbeauty_laravel/public'+item.image_path}
+                                            <img src={process.env.REACT_APP_BASE_URL+item.image_path}
                                                  className="img-fluid rounded-top" alt="555"/>
 
                                         </div>

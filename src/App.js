@@ -19,10 +19,14 @@ import './template/css/style.css';
 import Footer from "./components/Footer";
 
 import Nav from "./components/Nav";
+
+
+
 // import $ from 'jquery';
-window.jQuery = $;
-window.$ = $;
-global.jQuery = $;
+// window.jQuery = $;
+// window.$ = $;
+// global.jQuery = $;
+
 
 function App() {
     return (

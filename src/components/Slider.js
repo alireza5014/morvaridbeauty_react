@@ -21,7 +21,8 @@ export default class Slider extends Component {
 
 
     componentDidMount() {
-        fetch('http://localhost/morvaridbeauty_laravel/public/api/slider')
+
+        fetch(''+process.env.REACT_APP_API_URL+'/slider')
             .then(response => response.json())
             .then(json => this.setState({
                 items: json.data,
@@ -48,7 +49,7 @@ export default class Slider extends Component {
                         <div className="carousel-inner">
 
                             {items.map(item => (
-                            <div className={"carousel-item "+item.status} style={{backgroundImage: "url(" + 'http://localhost/morvaridbeauty_laravel/public' + item.image_path + ")"}}>
+                            <div className={"carousel-item "+item.status} style={{backgroundImage: "url(" + process.env.REACT_APP_BASE_URL+  item.image_path + ")"}}>
                                 <div className="bg-overlay"/>
                                 <div className="home-center">
                                     <div className="home-desc-center">

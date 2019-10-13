@@ -11,7 +11,10 @@ export default class ContactUs extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: {},
+            data: {
+                title: "",
+                content: ""
+            },
             error: null,
             category_slug: '',
         };
@@ -21,7 +24,7 @@ export default class ContactUs extends Component {
 
 
     componentDidMount() {
-        fetch('http://localhost/morvaridbeauty_laravel/public/api/contact_us')
+        fetch(process.env.REACT_APP_API_URL+'/contact_us')
             .then(response => response.json())
             .then(json => this.setState({
                 data: json.data,

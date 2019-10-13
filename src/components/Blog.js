@@ -19,7 +19,8 @@ export default class Blog extends Component {
 
 
     componentDidMount() {
-        fetch('http://localhost/morvaridbeauty_laravel/public/api/blog?category_slug=بلاگ&&limit='+this.props.limit)
+
+        fetch(''+process.env.REACT_APP_API_URL+'/blog?category_slug=بلاگ&&limit='+this.props.limit)
             .then(response => response.json())
             .then(json => this.setState({
                 items: json.data.posts,
@@ -31,7 +32,6 @@ export default class Blog extends Component {
 
 
     render() {
-        console.log(this.state)
 
         const {error, isLoaded, items} = this.state;
         if (error) {
@@ -52,10 +52,7 @@ export default class Blog extends Component {
                             <div className="col-12">
                                 <div className="section-title text-center">
                                     <h4 className="title text-uppercase mb-4">اخبار و بلاگ ما</h4>
-                                    <p className="text-muted mx-auto para-desc mb-0">رنگ رویایی خود را چاپ کنید خانه خود
-                                        را
-                                        به رنگهای پر جنب و جوش ببرید. ما ارائه خدمات انعطاف پذیر برای اسکان را در اولویت
-                                        قرار می دهیم</p>
+
                                 </div>
                             </div>
 
@@ -67,7 +64,7 @@ export default class Blog extends Component {
                             {items.map(item => (
                                 <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                                     <div className="blog-post rounded shadow">
-                                        <img src={'http://localhost/morvaridbeauty_laravel/public' + item.image_path}
+                                        <img src={process.env.REACT_APP_BASE_URL + item.image_path}
                                              className="img-fluid rounded-top"
                                              alt=""/>
                                         <div className="content pt-4 pb-4 p-3">

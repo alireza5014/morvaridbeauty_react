@@ -18,7 +18,7 @@ export default class Price extends Component {
 
 
     componentDidMount() {
-        fetch('http://localhost/morvaridbeauty_laravel/public/api/tariffe')
+        fetch(process.env.REACT_APP_API_URL+'/tariffe')
             .then(response => response.json())
             .then(json => this.setState({
                 items: json.data,
@@ -40,9 +40,7 @@ export default class Price extends Component {
                         <div className="col-12 text-center">
                             <div className="section-title">
                                 <h4 className="title text-uppercase mb-4">نرخ های ما</h4>
-                                <p className="text-muted mx-auto para-desc mb-0">رنگ رویایی خود را چاپ کنید خانه خود را
-                                    به رنگهای پر جنب و جوش ببرید. ما ارائه خدمات انعطاف پذیر برای اسکان را در اولویت
-                                    قرار می دهیم برای نیاز های شما</p>
+
                             </div>
                         </div>
 

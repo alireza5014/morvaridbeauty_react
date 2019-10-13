@@ -34,7 +34,7 @@ export default class BlogContent extends Component {
         };
 
 
-        fetch(`http://localhost/morvaridbeauty_laravel/public/api/postContent?category_slug=${encodeURIComponent(data.category_slug)}&post_slug=${encodeURIComponent(data.post_slug)}`, {
+        fetch(''+process.env.REACT_APP_API_URL+`/postContent?category_slug=${encodeURIComponent(data.category_slug)}&post_slug=${encodeURIComponent(data.post_slug)}`, {
             method: "GET",
 
         })
