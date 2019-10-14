@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Link, Route} from "react-router-dom";
-import BlogContent from "./BlogContent";
+
 
 export default class Footer extends Component {
 
@@ -60,12 +59,12 @@ export default class Footer extends Component {
                             <div className="col-lg-2 col-md-4 mt-4 pt-2">
                                 <h4 className="text-light text-uppercase footer-head">لینک ها</h4>
                                 <ul className="list-unstyled footer-list mt-4">
-                                    <li><a href={'/about_us'} className="text-foot"><i className="mdi mdi-chevron-right  mr-2"/> درباره
+                                    <li><a href={'/#/about_us'} className="text-foot"><i className="mdi mdi-chevron-right  mr-2"/> درباره
                                         کلینیک مروارید</a>
                                     </li>
-                                    <li><a href={'/blog'} className="text-foot"><i className="mdi mdi-chevron-right mr-2"/> بلاگ ها
+                                    <li><a href={'/#/blog'} className="text-foot"><i className="mdi mdi-chevron-right mr-2"/> بلاگ ها
                                          </a></li>
-                                    <li><a href={'/contact_us'} className="text-foot"><i className="mdi mdi-chevron-right mr-2"/> تماس با ما</a>
+                                    <li><a href={'/#/contact_us'} className="text-foot"><i className="mdi mdi-chevron-right mr-2"/> تماس با ما</a>
                                     </li>
 
                                 </ul>
@@ -76,10 +75,11 @@ export default class Footer extends Component {
                                 <h4 className="text-light text-uppercase footer-head">    مطالب مفید </h4>
                                 <ul className="list-unstyled footer-list mt-4">
 
-                                    {items.map(item => (<li>
+                                    {items.map(item => (<li  key={item.id}>
 
-                                        <a className="text-foot"
-                                              href={"/blog-content/" + this.state.category_slug + "/" + item.slug}>
+
+                                        <a  className="text-foot"
+                                              href={"/#/blog-content/" + this.state.category_slug + "/" + item.slug}>
                                             <i className="mdi mdi-chevron-right mr-2"/> {item.title}
                                              </a>
                                       </li>

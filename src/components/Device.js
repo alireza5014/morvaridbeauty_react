@@ -2,7 +2,15 @@ import React, {Component} from 'react';
 import Meta from "./Meta";
 import {Link} from "react-router-dom";
 
-
+const metas=[
+    {
+        key:"keywords",
+        value:"دستگاه های کلینیک مروارید "
+    },
+    {
+        key:"description",
+        value:"لیست دستگاههای کلینیک مروارید ویژه بانوان شهر قدس"}
+];
 export default class Device extends Component {
 
 
@@ -42,7 +50,7 @@ export default class Device extends Component {
         } else {
             return (
                 <section className="section" id="team">
-                    <Meta title={' برخی از تجهیزات کلینیک مروراید'} meta={[]}/>
+                    <Meta title={' برخی از تجهیزات کلینیک مروراید'} meta={metas}/>
 
                     <div className="container">
                         <div className="row justify-content-center">
@@ -59,7 +67,7 @@ export default class Device extends Component {
                         <div className="row">
 
                             {items.map(item => (
-                                <div className="col-lg-3 col-md-6 mt-4 pt-2">
+                                <div key={item.id} className="col-lg-3 col-md-6 mt-4 pt-2">
                                     <div className="team-concept rounded text-center bg-white shadow">
                                         <div className="team-image position-relative">
                                             <img src={process.env.REACT_APP_BASE_URL+item.image_path}

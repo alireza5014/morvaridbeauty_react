@@ -2,11 +2,7 @@ import React, {Component} from 'react';
 import Meta from "./Meta";
 import Parser from "html-react-parser";
 
-const meta = {
-    title: 'ContactUs',
-    keywords: 'ContactUs',
-    description: 'ContactUs',
-}
+
 export default class ContactUs extends Component {
     constructor(props) {
         super(props);
@@ -123,10 +119,13 @@ export default class ContactUs extends Component {
 
                             <div className="col-md-5 mt-4 pt-2">
                                 <div className="map">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d197764.93543986446!2d21.960352949732812!3d39.24112105942661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1559731777131!5m2!1sen!2sin"
-                                    />
+                                    <iframe width="600" height="500" id="gmap_canvas"
+                                            src="https://maps.google.com/maps?q=%20%20%DA%A9%D9%84%DB%8C%D9%86%DB%8C%DA%A9%20%20%D9%BE%D9%88%D8%B3%D8%AA%20%D9%88%20%D9%85%D9%88%20%D9%88%D9%84%DB%8C%D8%B2%D8%B1%20%D9%85%D8%B1%D9%88%D8%A7%D8%B1%DB%8C%D8%AF%20%D8%B4%D9%87%D8%B1%20%D9%82%D8%AF%D8%B3&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                            frameBorder="0" scrolling="no" marginHeight="0"
+                                            marginWidth="0"></iframe>
                                 </div>
+
+
                             </div>
 
                         </div>

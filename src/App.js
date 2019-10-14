@@ -1,5 +1,4 @@
 import React from 'react';
-import $ from 'jquery';
 
 
 import './App.css';
@@ -22,10 +21,7 @@ import Nav from "./components/Nav";
 
 
 
-// import $ from 'jquery';
-// window.jQuery = $;
-// window.$ = $;
-// global.jQuery = $;
+
 
 
 function App() {

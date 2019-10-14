@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import image_01 from '../../src/images/business/01.jpg'
-import image_02 from '../../src/images/business/02.jpg'
-import image_03 from '../../src/images/business/03.jpg'
+
 
 export default class Slider extends Component {
 
@@ -22,7 +20,7 @@ export default class Slider extends Component {
 
     componentDidMount() {
 
-        fetch(''+process.env.REACT_APP_API_URL+'/slider')
+        fetch( process.env.REACT_APP_API_URL+'/slider')
             .then(response => response.json())
             .then(json => this.setState({
                 items: json.data,
@@ -35,25 +33,27 @@ export default class Slider extends Component {
     render() {
 
         const {error, isLoaded, items} = this.state;
+
+
         if (error) {
             console.log(error);
             return <div>Error: {error.message}</div>;
         } else if (isLoaded) {
             return <div>Loading...</div>;
         } else {
+
              return (
-                <section className="home-slider position-relative" id="home">
-
-
+                <section className="home-slider position-relative"  >
                     <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                         <div className="carousel-inner">
 
+
                             {items.map(item => (
-                            <div className={"carousel-item "+item.status} style={{backgroundImage: "url(" + process.env.REACT_APP_BASE_URL+  item.image_path + ")"}}>
+                                 <div key={item.id} className={"carousel-item "+item.status} style={{backgroundImage: "url(" + process.env.REACT_APP_BASE_URL+  item.image_path + ")"}}>
                                 <div className="bg-overlay"/>
                                 <div className="home-center">
                                     <div className="home-desc-center">
-                                        <div className="container-fluid">
+                                         <div className="container-fluid">
                                             <div className="row justify-content-center">
                                                 <div className="col-lg-12">
                                                     <div className="title-heading text-center mt-5 pt-4">
@@ -80,13 +80,13 @@ export default class Slider extends Component {
 
                         </div>
 
-                        <a onClick={'/'} className="carousel-control-prev" role="button"
+                        <a   className="carousel-control-prev" role="button"
                            href={'#carouselExampleControls'}
                            data-slide="prev">
                             <span className="carousel-control-prev-icon" aria-hidden="true"/>
                             <span className="sr-only">قبلی</span>
                         </a>
-                        <a onClick={'/'} className="carousel-control-next" role="button"
+                        <a   className="carousel-control-next" role="button"
                            href={'#carouselExampleControls'}
                            data-slide="next">
                             <span className="carousel-control-next-icon" aria-hidden="true"/>
