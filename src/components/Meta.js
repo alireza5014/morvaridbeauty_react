@@ -8,7 +8,7 @@ export default class Meta extends Component {
         if (this.props.meta) {
             return (
                 <Helmet>
-                    <title>{this.props.title}222</title>
+                    <title>{this.props.title}</title>
                     {this.props.meta.map(item => (
                         <meta name={item.key} content={item.value}/>
                     ))}

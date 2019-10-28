@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Router, HashRouter, Link} from "react-router-dom";
+import { HashRouter, Link} from "react-router-dom";
 
 import Home from "./Home";
 import Service from "./Service";
@@ -7,7 +7,7 @@ import Blog from "./Blog";
 import Device from "./Device";
 import AboutUs from "./AboutUs";
 import Price from "./Price";
-import { Route} from "react-router";
+import {Route, Router} from "react-router";
 import BlogContent from "./BlogContent";
 
 import Slider from "./Slider";
