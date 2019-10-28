@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { HashRouter, Link} from "react-router-dom";
+import {Router, HashRouter, Link} from "react-router-dom";
 
 import Home from "./Home";
 import Service from "./Service";
@@ -12,12 +12,16 @@ import BlogContent from "./BlogContent";
 
 import Slider from "./Slider";
 import ContactUs from "./ContactUs";
+import history from '../history';
 
 
 export default class Nav extends Component {
     render() {
         return (
-            <HashRouter  >
+
+
+                <Router history={history}>
+
 
             <nav id="counter" className="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
                 <div className="container">
@@ -107,9 +111,10 @@ export default class Nav extends Component {
 
 
 
-            </HashRouter>
+            </Router>
 
 
     )
     }
 }
+
