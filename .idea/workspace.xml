@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cf6c18a3-6350-4fe6-bc55-55959eb25f1c" name="Default Changelist" comment="">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
@@ -14,6 +15,9 @@
       <change beforePath="$PROJECT_DIR$/src/components/Price.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Price.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Slider.js" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> Stashed changes
 =======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 >>>>>>> Stashed changes
@@ -144,7 +148,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/Slider.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="203">
-              <caret line="50" column="174" selection-start-line="50" selection-start-column="174" selection-end-line="50" selection-end-column="174" />
+              <caret line="50" column="67" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
                 <element signature="e#289#485#0" expanded="true" />
@@ -427,25 +431,32 @@
       <workItem from="1570601928893" duration="22931000" />
 <<<<<<< Updated upstream
       <workItem from="1570862054334" duration="3013000" />
+<<<<<<< Updated upstream
       <workItem from="1570909383352" duration="3028000" />
 =======
       <workItem from="1570862054334" duration="4088000" />
       <workItem from="1570887611963" duration="6000" />
       <workItem from="1570948673522" duration="292000" />
 >>>>>>> Stashed changes
+=======
+      <workItem from="1570909383352" duration="4721000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="61762000" />
 =======
     <option name="totallyTimeSpent" value="60107000" />
 >>>>>>> Stashed changes
+=======
+    <option name="totallyTimeSpent" value="63455000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
 <<<<<<< Updated upstream
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -458,8 +469,8 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
 >>>>>>> Stashed changes
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.28551725" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26171243" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.28551725" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26171243" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -851,10 +862,14 @@
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< Updated upstream
         <state relative-caret-position="203">
+<<<<<<< Updated upstream
           <caret line="50" column="174" selection-start-line="50" selection-start-column="174" selection-end-line="50" selection-end-column="174" />
 =======
         <state relative-caret-position="333">
           <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+>>>>>>> Stashed changes
+=======
+          <caret line="50" column="67" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
 >>>>>>> Stashed changes
           <folding>
             <element signature="e#0#39#0" expanded="true" />

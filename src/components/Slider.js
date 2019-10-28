@@ -1,7 +1,4 @@
 import React, {Component} from 'react';
-import image_01 from '../../src/images/business/01.jpg'
-import image_02 from '../../src/images/business/02.jpg'
-import image_03 from '../../src/images/business/03.jpg'
 
 export default class Slider extends Component {
 
