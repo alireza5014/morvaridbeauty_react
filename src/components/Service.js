@@ -2,11 +2,15 @@ import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 import Meta from "./Meta";
 
-const meta = {
-    title: 'about',
-    keywords: 'about',
-    description: 'about',
-}
+const metas=[
+    {
+        key:"keywords",
+        value:"خدمات کلینیک مروارید "
+    },
+    {
+        key:"description",
+        value:"لیست خدمات کلینیک مروارید ویژه بانوان شهر قدس"}
+];
 export default class Service extends Component {
 
 
@@ -47,7 +51,7 @@ export default class Service extends Component {
 
             return (
                 <section className="section bg-light" id="services">
-                    <Meta title={'خدمات کلینیک مروارید'} meta={[]}/>
+                    <Meta title={'خدمات کلینیک مروارید'} meta={metas}/>
 
                     <div className="container">
                         <div className="row justify-content-center">

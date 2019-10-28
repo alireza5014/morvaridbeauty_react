@@ -1,11 +1,7 @@
 import React, {Component} from 'react';
 import Meta from "./Meta";
 import Parser from 'html-react-parser';
-const meta = {
-    title: 'BlogDetail1',
-    keywords: 'BlogDetail',
-    description: 'BlogDetail',
-}
+
 
 export default class BlogContent extends Component {
 

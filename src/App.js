@@ -1,5 +1,4 @@
 import React from 'react';
-import $ from 'jquery';
 
 
 import './App.css';
@@ -15,17 +14,14 @@ import './template/css/slick.css';
 import './template/css/slick-theme.css';
 import './template/css/style.css';
 
-
+import "@babel/polyfill";
 import Footer from "./components/Footer";
 
 import Nav from "./components/Nav";
 
 
 
-// import $ from 'jquery';
-// window.jQuery = $;
-// window.$ = $;
-// global.jQuery = $;
+
 
 
 function App() {

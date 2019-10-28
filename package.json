@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/polyfill": "^7.6.0",
     "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
+    "connect-history-api-fallback": "^1.6.0",
     "gatsby-plugin-react-helmet": "^3.1.10",
     "he": "^1.2.0",
+    "history": "^4.10.1",
     "html-react-parser": "^0.9.1",
     "jquery": "^3.4.1",
     "react": "^16.10.2",
@@ -18,10 +21,10 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "react-scrollspy": "^3.4.0",
-    "react-seo": "^1.0.11"
+    "webpack-cli": "^3.3.9"
   },
   "scripts": {
-    "start": "set PORT=81 && react-scripts start",
+    "start": "set PORT=3000 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

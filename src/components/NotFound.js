@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import Meta from "./Meta";
-import Parser from "html-react-parser";
 
 export default class NotFound extends Component {
 

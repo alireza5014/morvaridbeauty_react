@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import {Router, HashRouter, Link} from "react-router-dom";
 
 import Home from "./Home";
 import Service from "./Service";
@@ -7,31 +7,37 @@ import Blog from "./Blog";
 import Device from "./Device";
 import AboutUs from "./AboutUs";
 import Price from "./Price";
-import {Route} from "react-router";
+import { Route} from "react-router";
 import BlogContent from "./BlogContent";
+
+import Slider from "./Slider";
 import ContactUs from "./ContactUs";
+import history from '../history';
 
 
 export default class Nav extends Component {
     render() {
         return (
-            <Router>
+
+
+                <Router history={history}>
+
 
             <nav id="counter" className="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
                 <div className="container">
-                    <a className="navbar-brand" >
+                    <div className="navbar-brand" >
 
-                        <a href="" className="text-success l-dark ">
+                        <a href="#" className="text-success l-dark ">
                             <div className="btn-group"><i className="fa fa-phone fa-1x m-3"/><h3
-                                className=" ml-3">02146813751</h3></div>
+                                className=" ml-3">09120197244</h3></div>
                         </a>
-                        <a href="" className="text-white l-light ">
+                        <a href="#" className="text-white l-light ">
                             <div className="btn-group"><i className="fa fa-user fa-1x m-3"/><h3
-                                className=" ml-3">09126145705</h3></div>
+                                className=" ml-3">09120197244</h3></div>
                         </a>
 
 
-                    </a>
+                    </div>
                     <button className="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -104,9 +110,11 @@ export default class Nav extends Component {
                 <Route exact path='/contact_us' component={ContactUs}/>
 
 
+
             </Router>
 
 
     )
     }
 }
+

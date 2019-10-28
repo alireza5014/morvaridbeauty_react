@@ -1,7 +1,15 @@
 import React, {Component} from 'react';
 import Meta from "./Meta";
 import TariffeItems from "./TariffeItems";
-
+const metas=[
+    {
+        key:"keywords",
+        value:" قیمت لیزر موهای زائد در شهر قدس ، هزینه لیزر در شهر قدس ، کلینیک ارزان در شهر قدس ، هاشور ابرو در شهر قدس "
+    },
+    {
+        key:"description",
+        value:"تعرفه های باورنکردنی کلینیک مروارید ویژه بانوان شهر قدس"}
+];
 export default class Price extends Component {
 
     constructor(props) {
@@ -33,7 +41,7 @@ export default class Price extends Component {
         return (
 
             <section className="section" id="price">
-                <Meta title={'نرخ های ما'} meta={[]}/>
+                <Meta title={'نرخ های ما'} meta={metas}/>
 
                 <div className="container">
                     <div className="row justify-content-center">

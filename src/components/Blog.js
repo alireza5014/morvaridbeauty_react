@@ -2,7 +2,15 @@ import React, {Component} from 'react';
 import Meta from "./Meta";
 import {Link} from "react-router-dom";
 
-
+const metas=[
+    {
+        key:"keywords",
+        value:"مطالب در مورد لیزر موهای زائد ، لیزر موهای زاید ، کلینیک در شهر قدس ، لیزر مو در شهر قدس"
+    },
+    {
+        key:"description",
+        value:"مطالب در مورد لیزر موهای زائد "}
+];
 export default class Blog extends Component {
 
     constructor(props) {
@@ -44,7 +52,7 @@ export default class Blog extends Component {
 
                 <section className="section">
 
-                    <Meta title={'اخبار و بلاگ ما'} meta={[]}/>
+                    <Meta title={'اخبار و بلاگ ما'} meta={metas}/>
 
 
                     <div className="container">
@@ -62,7 +70,7 @@ export default class Blog extends Component {
 
 
                             {items.map(item => (
-                                <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                                <div key={item.id} className="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                                     <div className="blog-post rounded shadow">
                                         <img src={process.env.REACT_APP_BASE_URL + item.image_path}
                                              className="img-fluid rounded-top"
